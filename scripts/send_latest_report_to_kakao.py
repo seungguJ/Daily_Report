@@ -1,10 +1,14 @@
 import json
 import os
 import sys
+import time
 from pathlib import Path
 from urllib.parse import quote
 
 import requests
+
+
+MAX_KAKAO_TEXT_LEN = 190
 
 
 def refresh_access_token() -> str:
@@ -42,40 +46,58 @@ def build_github_file_url(report_path: str) -> str:
     return f"https://github.com/{repository}/blob/{sha}/{encoded_path}"
 
 
-def make_kakao_text(report_text: str, report_path: str) -> str:
+def clean_markdown(text: str) -> str:
     lines = []
 
-    for line in report_text.splitlines():
+    for line in text.splitlines():
         line = line.strip()
         if not line:
             continue
 
-        line = line.replace("#", "").replace("*", "").replace("`", "")
+        line = (
+            line.replace("#", "")
+            .replace("**", "")
+            .replace("*", "")
+            .replace("`", "")
+        )
+
         lines.append(line)
 
-    body = "\n".join(lines)
-
-    if len(body) > 190:
-        body = body[:190].rstrip() + "\n…"
-
-    return body or f"새 리포트가 업로드되었습니다: {report_path}"
+    return "\n".join(lines)
 
 
-def send_kakao(report_path: str) -> None:
-    path = Path(report_path)
+def split_text_by_limit(text: str, max_len: int = MAX_KAKAO_TEXT_LEN) -> list[str]:
+    chunks = []
+    current = ""
 
-    if not path.exists():
-        raise FileNotFoundError(f"Report file not found: {report_path}")
+    for line in text.splitlines():
+        candidate = line if not current else current + "\n" + line
 
-    report_text = path.read_text(encoding="utf-8")
-    access_token = refresh_access_token()
-    file_url = build_github_file_url(report_path)
+        if len(candidate) <= max_len:
+            current = candidate
+            continue
 
-    kakao_text = make_kakao_text(report_text, report_path)
+        if current:
+            chunks.append(current)
+            current = ""
 
+        # 한 줄 자체가 너무 길면 강제로 자릅니다.
+        while len(line) > max_len:
+            chunks.append(line[:max_len])
+            line = line[max_len:]
+
+        current = line
+
+    if current:
+        chunks.append(current)
+
+    return chunks
+
+
+def send_one_kakao_message(access_token: str, text: str, file_url: str) -> None:
     template_object = {
         "object_type": "text",
-        "text": kakao_text,
+        "text": text,
         "link": {
             "web_url": file_url,
             "mobile_web_url": file_url,
@@ -94,6 +116,37 @@ def send_kakao(report_path: str) -> None:
     )
     res.raise_for_status()
     print(res.json())
+
+
+def send_kakao(report_path: str) -> None:
+    path = Path(report_path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Report file not found: {report_path}")
+
+    report_text = path.read_text(encoding="utf-8")
+    cleaned_text = clean_markdown(report_text)
+
+    access_token = refresh_access_token()
+    file_url = build_github_file_url(report_path)
+
+    chunks = split_text_by_limit(cleaned_text)
+
+    if not chunks:
+        chunks = [f"새 리포트가 업로드되었습니다: {report_path}"]
+
+    total = len(chunks)
+
+    for idx, chunk in enumerate(chunks, start=1):
+        prefix = f"[AI Morning Brief {idx}/{total}]\n"
+        allowed_body_len = MAX_KAKAO_TEXT_LEN - len(prefix)
+
+        message = prefix + chunk[:allowed_body_len]
+
+        send_one_kakao_message(access_token, message, file_url)
+
+        # 너무 빠르게 연속 호출하지 않도록 약간 쉬어갑니다.
+        time.sleep(1)
 
 
 if __name__ == "__main__":
