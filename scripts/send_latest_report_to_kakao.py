@@ -42,10 +42,10 @@ def build_github_file_url(report_path: str) -> str:
     return f"https://github.com/{repository}/blob/{sha}/{encoded_path}"
 
 
-def compact_markdown(text: str) -> str:
+def make_kakao_text(report_text: str, report_path: str) -> str:
     lines = []
 
-    for line in text.splitlines():
+    for line in report_text.splitlines():
         line = line.strip()
         if not line:
             continue
@@ -55,10 +55,10 @@ def compact_markdown(text: str) -> str:
 
     body = "\n".join(lines)
 
-    if len(body) > 430:
-        body = body[:430].rstrip() + "\n…전체 내용은 GitHub에서 확인"
+    if len(body) > 190:
+        body = body[:190].rstrip() + "\n…"
 
-    return body
+    return body or f"새 리포트가 업로드되었습니다: {report_path}"
 
 
 def send_kakao(report_path: str) -> None:
@@ -71,19 +71,16 @@ def send_kakao(report_path: str) -> None:
     access_token = refresh_access_token()
     file_url = build_github_file_url(report_path)
 
-    description = compact_markdown(report_text) or f"새 리포트가 업로드되었습니다: {report_path}"
+    kakao_text = make_kakao_text(report_text, report_path)
 
     template_object = {
-        "object_type": "feed",
-        "content": {
-            "title": "AI Morning Brief",
-            "description": description,
-            "link": {
-                "web_url": file_url,
-                "mobile_web_url": file_url,
-            },
+        "object_type": "text",
+        "text": kakao_text,
+        "link": {
+            "web_url": file_url,
+            "mobile_web_url": file_url,
         },
-        "button_title": "리포트 보기",
+        "button_title": "전체 리포트 보기",
     }
 
     res = requests.post(
