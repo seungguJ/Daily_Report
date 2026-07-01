@@ -5,5 +5,12 @@
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
+  },
+  {
+    "title": "MiniKV: Pushing the Limits of 2-Bit KV Cache via Compression and System Co-Design for Efficient Long Context Inference",
+    "venue": "ACL 2025 (Findings)",
+    "publication_date": "2025-07",
+    "link": "https://aclanthology.org/2025.findings-acl.952/",
+    "selected_date": "2026-07-01"
   }
 ]

@@ -4,5 +4,11 @@
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
     "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Microsoft Agent Framework 1.0 (GA)",
+    "announcement_date": "2026-04-03",
+    "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
+    "selected_date": "2026-07-01"
   }
 ]
