@@ -1,0 +1,64 @@
+name: Send Latest Report to Kakao
+
+on:
+  push:
+    branches:
+      - main
+      - "claude/**"
+    paths:
+      - "reports/**.md"
+      - "reports/**/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-kakao:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find latest changed report
+        id: find_report
+        shell: bash
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          if [[ "$BEFORE" =~ ^0+$ ]]; then
+            CHANGED_FILES=$(git ls-tree -r --name-only "$AFTER" | grep -E '^reports/.*\.md$' || true)
+          else
+            CHANGED_FILES=$(git diff --name-only "$BEFORE" "$AFTER" -- 'reports/*.md' 'reports/**/*.md' || true)
+          fi
+
+          echo "Changed report files:"
+          echo "$CHANGED_FILES"
+
+          REPORT_FILE=$(echo "$CHANGED_FILES" | sort | tail -n 1)
+
+          if [ -z "$REPORT_FILE" ]; then
+            echo "No report file found."
+            exit 1
+          fi
+
+          echo "report_file=$REPORT_FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Send Kakao message
+        run: python scripts/send_latest_report_to_kakao.py "${{ steps.find_report.outputs.report_file }}"
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+          KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
+          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
