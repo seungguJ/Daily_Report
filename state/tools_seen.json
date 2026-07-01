@@ -4,5 +4,11 @@
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
     "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Claude Code Dynamic Workflows",
+    "announcement_date": "2026-05-28",
+    "link": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    "selected_date": "2026-07-01"
   }
 ]
