@@ -1,0 +1,13 @@
+[AI Morning Brief - 2026-07-01]
+
+1) On-device LLM 논문
+- 제목: Speculative Speculative Decoding (ICLR 2026)
+- 핵심: 드래프트 모델이 검증 결과를 미리 예측해 다음 추론을 선제 준비, 드래프트-검증 순차 병목 제거 (Saguaro 알고리즘)
+- 왜 볼만한가: 스펙큘레이티브 디코딩 대비 최대 2배, 오토리그레시브 대비 최대 5배 속도 향상. 온디바이스 추론 지연 개선 핵심 기법
+- 링크: https://iclr.cc/virtual/2026/poster/10008711
+
+2) AI Agent 활용 아이템
+- 이름: Anthropic Agent Skills
+- 핵심: 지침·스크립트를 담은 폴더(Skill)를 Claude가 필요할 때 동적으로 로드해 특정 작업에 특화된 성능 발휘, 앱/Code/API 전반에서 재사용 가능
+- 활용 아이디어: 반복 업무 절차를 markdown 지침으로 패키징해 Skill로 등록하면 매번 설명 없이 일관된 결과 확보 가능
+- 링크: https://claude.com/blog/skills
