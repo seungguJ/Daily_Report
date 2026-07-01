@@ -4,5 +4,11 @@
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
     "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Claude Code Routines",
+    "announcement_date": "2026-04-13",
+    "link": "https://code.claude.com/docs/en/routines",
+    "selected_date": "2026-07-01"
   }
 ]
