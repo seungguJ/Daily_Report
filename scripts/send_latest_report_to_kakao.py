@@ -9,10 +9,7 @@ from urllib.parse import quote
 import requests
 
 
-# 실사용 기준: 2,000자 수신이 확인된 경우를 반영해 1,900자로 전송
-# 단, 공식 문서상 기본 text template은 200자 제한이므로 실패 시 180자 fallback
-PRIMARY_MAX_LEN = 1900
-FALLBACK_MAX_LEN = 180
+MAX_KAKAO_TEXT_LEN = 2000
 SEND_INTERVAL_SECONDS = 1
 
 
@@ -54,8 +51,7 @@ def build_github_file_url(report_path: str) -> str:
 def clean_markdown(text: str) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
 
-    cleaned_lines = []
-
+    lines = []
     for line in text.splitlines():
         line = line.strip()
         if not line:
@@ -67,42 +63,40 @@ def clean_markdown(text: str) -> str:
         line = re.sub(r"^\*\s+", "- ", line)
         line = re.sub(r"\s+", " ", line)
 
-        cleaned_lines.append(line)
+        lines.append(line)
 
-    return "\n".join(cleaned_lines)
+    return "\n".join(lines)
 
 
-def split_text(text: str, max_len: int) -> list[str]:
-    chunks = []
-    current = ""
+def extract_sections(report_text: str) -> tuple[str, str]:
+    cleaned = clean_markdown(report_text)
 
-    for line in text.split("\n"):
-        line = line.strip()
+    paper_pattern = r"(1\.\s*On-device AI 논문[\s\S]*?)(?=\n2\.\s*AI Agent 활용 아이템|$)"
+    agent_pattern = r"(2\.\s*AI Agent 활용 아이템[\s\S]*)"
 
-        while len(line) > max_len:
-            if current:
-                chunks.append(current)
-                current = ""
+    paper_match = re.search(paper_pattern, cleaned)
+    agent_match = re.search(agent_pattern, cleaned)
 
-            chunks.append(line[:max_len])
-            line = line[max_len:].strip()
+    if not paper_match:
+        raise ValueError("On-device AI 논문 섹션을 찾지 못했습니다.")
 
-        if not line:
-            continue
+    if not agent_match:
+        raise ValueError("AI Agent 활용 아이템 섹션을 찾지 못했습니다.")
 
-        candidate = line if not current else f"{current}\n{line}"
+    paper_section = paper_match.group(1).strip()
+    agent_section = agent_match.group(1).strip()
 
-        if len(candidate) <= max_len:
-            current = candidate
-        else:
-            if current:
-                chunks.append(current)
-            current = line
+    return paper_section, agent_section
 
-    if current:
-        chunks.append(current)
 
-    return chunks
+def trim_message(text: str, file_url: str) -> str:
+    if len(text) <= MAX_KAKAO_TEXT_LEN:
+        return text
+
+    suffix = "\n\n…전체 내용은 버튼에서 확인"
+    limit = MAX_KAKAO_TEXT_LEN - len(suffix)
+
+    return text[:limit].rstrip() + suffix
 
 
 def send_one_message(access_token: str, text: str, file_url: str) -> None:
@@ -139,20 +133,6 @@ def send_one_message(access_token: str, text: str, file_url: str) -> None:
     print(payload)
 
 
-def send_chunks(access_token: str, chunks: list[str], file_url: str) -> None:
-    total = len(chunks)
-
-    for idx, chunk in enumerate(chunks, start=1):
-        if total == 1:
-            message = chunk
-        else:
-            prefix = f"[AI Morning Brief {idx}/{total}]\n"
-            message = prefix + chunk
-
-        send_one_message(access_token, message, file_url)
-        time.sleep(SEND_INTERVAL_SECONDS)
-
-
 def send_kakao(report_path: str) -> None:
     path = Path(report_path)
 
@@ -160,26 +140,25 @@ def send_kakao(report_path: str) -> None:
         raise FileNotFoundError(f"Report file not found: {report_path}")
 
     report_text = path.read_text(encoding="utf-8")
-    cleaned_text = clean_markdown(report_text)
-
-    if not cleaned_text:
-        cleaned_text = f"새 리포트가 업로드되었습니다: {report_path}"
-
     access_token = refresh_access_token()
     file_url = build_github_file_url(report_path)
 
-    primary_chunks = split_text(cleaned_text, PRIMARY_MAX_LEN)
+    paper_section, agent_section = extract_sections(report_text)
 
-    try:
-        print(f"Trying Kakao send with max_len={PRIMARY_MAX_LEN}")
-        send_chunks(access_token, primary_chunks, file_url)
-        return
-    except Exception as exc:
-        print(f"Primary send failed. Falling back to {FALLBACK_MAX_LEN}-character chunks.")
-        print(str(exc))
+    paper_message = trim_message(
+        "[AI Morning Brief - On-device AI 논문]\n\n" + paper_section,
+        file_url,
+    )
 
-    fallback_chunks = split_text(cleaned_text, FALLBACK_MAX_LEN)
-    send_chunks(access_token, fallback_chunks, file_url)
+    agent_message = trim_message(
+        "[AI Morning Brief - AI Agent 활용 아이템]\n\n" + agent_section,
+        file_url,
+    )
+
+    # 정확히 2개 메시지만 발송합니다.
+    send_one_message(access_token, paper_message, file_url)
+    time.sleep(SEND_INTERVAL_SECONDS)
+    send_one_message(access_token, agent_message, file_url)
 
 
 if __name__ == "__main__":
