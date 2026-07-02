@@ -4,5 +4,11 @@
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
     "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Claude Cowork",
+    "announcement_date": "2026-04-09",
+    "link": "https://claude.com/blog/cowork-for-enterprise",
+    "selected_date": "2026-07-02"
   }
 ]
