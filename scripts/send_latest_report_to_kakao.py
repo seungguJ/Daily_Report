@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -8,7 +9,11 @@ from urllib.parse import quote
 import requests
 
 
-MAX_KAKAO_TEXT_LEN = 190
+# 실사용 기준: 2,000자 수신이 확인된 경우를 반영해 1,900자로 전송
+# 단, 공식 문서상 기본 text template은 200자 제한이므로 실패 시 180자 fallback
+PRIMARY_MAX_LEN = 1900
+FALLBACK_MAX_LEN = 180
+SEND_INTERVAL_SECONDS = 1
 
 
 def refresh_access_token() -> str:
@@ -22,15 +27,15 @@ def refresh_access_token() -> str:
     if client_secret:
         data["client_secret"] = client_secret
 
-    res = requests.post(
+    resp = requests.post(
         "https://kauth.kakao.com/oauth/token",
         headers={"Content-Type": "application/x-www-form-urlencoded;charset=utf-8"},
         data=data,
         timeout=20,
     )
-    res.raise_for_status()
+    resp.raise_for_status()
 
-    payload = res.json()
+    payload = resp.json()
 
     if "refresh_token" in payload:
         print("WARNING: Kakao returned a new refresh_token.")
@@ -47,46 +52,52 @@ def build_github_file_url(report_path: str) -> str:
 
 
 def clean_markdown(text: str) -> str:
-    lines = []
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    cleaned_lines = []
 
     for line in text.splitlines():
         line = line.strip()
         if not line:
             continue
 
-        line = (
-            line.replace("#", "")
-            .replace("**", "")
-            .replace("*", "")
-            .replace("`", "")
-        )
+        line = re.sub(r"^#+\s*", "", line)
+        line = line.replace("**", "")
+        line = line.replace("`", "")
+        line = re.sub(r"^\*\s+", "- ", line)
+        line = re.sub(r"\s+", " ", line)
 
-        lines.append(line)
+        cleaned_lines.append(line)
 
-    return "\n".join(lines)
+    return "\n".join(cleaned_lines)
 
 
-def split_text_by_limit(text: str, max_len: int = MAX_KAKAO_TEXT_LEN) -> list[str]:
+def split_text(text: str, max_len: int) -> list[str]:
     chunks = []
     current = ""
 
-    for line in text.splitlines():
-        candidate = line if not current else current + "\n" + line
+    for line in text.split("\n"):
+        line = line.strip()
+
+        while len(line) > max_len:
+            if current:
+                chunks.append(current)
+                current = ""
+
+            chunks.append(line[:max_len])
+            line = line[max_len:].strip()
+
+        if not line:
+            continue
+
+        candidate = line if not current else f"{current}\n{line}"
 
         if len(candidate) <= max_len:
             current = candidate
-            continue
-
-        if current:
-            chunks.append(current)
-            current = ""
-
-        # 한 줄 자체가 너무 길면 강제로 자릅니다.
-        while len(line) > max_len:
-            chunks.append(line[:max_len])
-            line = line[max_len:]
-
-        current = line
+        else:
+            if current:
+                chunks.append(current)
+            current = line
 
     if current:
         chunks.append(current)
@@ -94,7 +105,7 @@ def split_text_by_limit(text: str, max_len: int = MAX_KAKAO_TEXT_LEN) -> list[st
     return chunks
 
 
-def send_one_kakao_message(access_token: str, text: str, file_url: str) -> None:
+def send_one_message(access_token: str, text: str, file_url: str) -> None:
     template_object = {
         "object_type": "text",
         "text": text,
@@ -105,17 +116,41 @@ def send_one_kakao_message(access_token: str, text: str, file_url: str) -> None:
         "button_title": "전체 리포트 보기",
     }
 
-    res = requests.post(
+    resp = requests.post(
         "https://kapi.kakao.com/v2/api/talk/memo/default/send",
         headers={
             "Authorization": f"Bearer {access_token}",
             "Content-Type": "application/x-www-form-urlencoded;charset=utf-8",
         },
-        data={"template_object": json.dumps(template_object, ensure_ascii=False)},
+        data={
+            "template_object": json.dumps(template_object, ensure_ascii=False)
+        },
         timeout=20,
     )
-    res.raise_for_status()
-    print(res.json())
+
+    if resp.status_code != 200:
+        raise RuntimeError(f"Kakao message send failed: {resp.status_code} {resp.text}")
+
+    payload = resp.json()
+
+    if payload.get("result_code") != 0:
+        raise RuntimeError(f"Kakao message send failed: {payload}")
+
+    print(payload)
+
+
+def send_chunks(access_token: str, chunks: list[str], file_url: str) -> None:
+    total = len(chunks)
+
+    for idx, chunk in enumerate(chunks, start=1):
+        if total == 1:
+            message = chunk
+        else:
+            prefix = f"[AI Morning Brief {idx}/{total}]\n"
+            message = prefix + chunk
+
+        send_one_message(access_token, message, file_url)
+        time.sleep(SEND_INTERVAL_SECONDS)
 
 
 def send_kakao(report_path: str) -> None:
@@ -127,26 +162,24 @@ def send_kakao(report_path: str) -> None:
     report_text = path.read_text(encoding="utf-8")
     cleaned_text = clean_markdown(report_text)
 
+    if not cleaned_text:
+        cleaned_text = f"새 리포트가 업로드되었습니다: {report_path}"
+
     access_token = refresh_access_token()
     file_url = build_github_file_url(report_path)
 
-    chunks = split_text_by_limit(cleaned_text)
+    primary_chunks = split_text(cleaned_text, PRIMARY_MAX_LEN)
 
-    if not chunks:
-        chunks = [f"새 리포트가 업로드되었습니다: {report_path}"]
+    try:
+        print(f"Trying Kakao send with max_len={PRIMARY_MAX_LEN}")
+        send_chunks(access_token, primary_chunks, file_url)
+        return
+    except Exception as exc:
+        print(f"Primary send failed. Falling back to {FALLBACK_MAX_LEN}-character chunks.")
+        print(str(exc))
 
-    total = len(chunks)
-
-    for idx, chunk in enumerate(chunks, start=1):
-        prefix = f"[AI Morning Brief {idx}/{total}]\n"
-        allowed_body_len = MAX_KAKAO_TEXT_LEN - len(prefix)
-
-        message = prefix + chunk[:allowed_body_len]
-
-        send_one_kakao_message(access_token, message, file_url)
-
-        # 너무 빠르게 연속 호출하지 않도록 약간 쉬어갑니다.
-        time.sleep(1)
+    fallback_chunks = split_text(cleaned_text, FALLBACK_MAX_LEN)
+    send_chunks(access_token, fallback_chunks, file_url)
 
 
 if __name__ == "__main__":
