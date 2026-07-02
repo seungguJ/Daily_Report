@@ -5,5 +5,12 @@
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Cost-efficient Collaboration between On-device and Cloud Language Models",
+    "venue": "ICML 2025",
+    "publication_date": "2025-07-13",
+    "link": "https://proceedings.mlr.press/v267/narayan25a.html",
+    "selected_date": "2026-07-02"
   }
 ]
