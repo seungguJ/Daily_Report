@@ -1,0 +1,26 @@
+[AI Morning Brief - 2026-07-02]
+
+1. On-device AI 논문
+
+* 제목: Cost-efficient Collaboration between On-device and Cloud Language Models (Minions)
+* 학회/게재시점: ICML 2025 (PMLR Volume 267, 2025년 7월)
+* 다루는 문제: 온디바이스 소형 LM은 저렴하지만 긴 문서·복잡 추론(금융/의료/과학 문서)에 약하고, 클라우드 LM은 정확하지만 비용이 크고 원본 문서를 외부로 보내야 함.
+* 핵심 Contribution: 온디바이스 LM과 클라우드 LM이 협업하는 두 프로토콜 제안. 단순 협업(MINION)은 비용 30.4배 절감했지만 정확도는 클라우드 대비 87%에 그침. 클라우드 모델이 작업을 하위 태스크로 분해하고 온디바이스 모델이 로컬 문서 조각을 병렬 처리하는 개선판(MINIONS)은 비용 5.7배 절감하면서 정확도 97.9%를 유지.
+* 인사이트:
+  1. 원본 문서는 기기 밖으로 나가지 않고 온디바이스 모델만 접근 → 비용 절감과 동시에 프라이버시 보장 구조.
+  2. 단순 협업만으론 정확도 손실이 컸지만, "작업 분해 + 로컬 병렬 처리" 설계로 클라우드 단독 대비 손실을 2% 수준까지 줄임.
+  3. 온디바이스 모델 자체를 키우기보다 클라우드와의 "협업 프로토콜 설계"가 실용적 대안이 될 수 있음을 실증.
+* 왜 볼만한가: 온디바이스 SLM의 약점(긴 컨텍스트·복잡 추론)을 인정하고 클라우드와 역할을 나누는 구체적 설계를 제시해, 실제 하이브리드 온디바이스 앱을 만들 때 참고할 청사진을 제공.
+* 링크: https://proceedings.mlr.press/v267/narayan25a.html
+
+2. AI Agent 활용 아이템
+
+* 이름: Anthropic skill-creator 업데이트 (Test, measure, and refine Agent Skills)
+* 공개/출시시점: 2026년 3월 3일 (Anthropic 공식 블로그)
+* 핵심 기능: Claude Agent Skill을 코드 없이 테스트·개선하는 공식 도구. 프롬프트별 기대 동작을 검증하는 Eval 작성, 모델/스킬 업데이트 후 pass rate·시간·토큰 사용량을 추적하는 벤치마크 모드, 스킬 버전 간 블라인드 A/B 비교, 트리거 정확도를 높이는 description 자동 튜닝 기능 포함.
+* 활용 아이디어:
+  1. 내가 만든 Claude Skill이 의도대로 동작하는지 Eval로 정량 검증해 "감으로 만드는 스킬"에서 벗어나기.
+  2. description 최적화 기능으로 스킬이 원치 않는 상황에서 발동(false positive)하거나 필요할 때 발동하지 않는(false negative) 문제를 자동 점검·수정.
+  3. 스킬 버전 업그레이드 시 블라인드 A/B 비교로 실제 성능 개선 여부를 객관적으로 확인.
+* 왜 볼만한가: 스킬 마켓플레이스가 커지면서 품질·트리거 정확도 검증이 핵심 과제가 됐고, 이를 코드 없이 해결하는 공식 도구가 이번에 강화됨.
+* 링크: https://claude.com/blog/improving-skill-creator-test-measure-and-refine-agent-skills
