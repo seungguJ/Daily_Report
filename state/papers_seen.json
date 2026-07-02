@@ -5,5 +5,12 @@
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
+  },
+  {
+    "title": "SlimLM: An Efficient Small Language Model for On-Device Document Assistance",
+    "venue": "ACL 2025 (System Demonstrations)",
+    "publication_date": "2025-07-27",
+    "link": "https://aclanthology.org/2025.acl-demo.42/",
+    "selected_date": "2026-07-02"
   }
 ]
