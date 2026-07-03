@@ -4,5 +4,11 @@
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
     "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Google Antigravity 2.0",
+    "announcement_date": "2026-05-19",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+    "selected_date": "2026-07-03"
   }
 ]

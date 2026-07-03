@@ -1,0 +1,26 @@
+[AI Morning Brief - 2026-07-03]
+
+1. On-device AI 논문
+
+* 제목: Demystifying Small Language Models for Edge Deployment
+* 학회/게재시점: ACL 2025 (2025년 7월, Vienna / ACL Anthology 2025.acl-long.718)
+* 다루는 문제: Phi, Gemma 등 공개 소형언어모델(SLM) 60개 이상이 스마트폰·IoT 같은 실제 엣지 환경에서 얼마나 실용적인지 체계적으로 검증된 적이 없었음
+* 핵심 Contribution: 60개 이상의 SLM을 태스크·하드웨어 전반에서 벤치마킹해 최신 SLM이 특정 일반 태스크에서 7B급 모델을 능가함을 실증하고, 개선 방향(태스크별 라우팅, 모델-하드웨어 co-design, vocabulary/KV 캐시 압축)을 제시
+* 인사이트:
+  1. 최신 SLM은 일반 태스크에서 7B급 모델과 맞먹는 성능을 내 온디바이스 배포가 이미 현실적 대안이 됨
+  2. In-context learning 능력은 여전히 뚜렷한 약점으로 남아 있어 태스크별 미세조정·라우팅 전략이 필요
+  3. Vocabulary 압축과 KV 캐시 압축이 엣지 디바이스에서 메모리·지연시간을 줄이는 핵심 레버로 지목됨
+* 왜 볼만한가: 60개 이상 모델을 정량 비교한 최초의 대규모 SLM 서베이+벤치마크로, 온디바이스 LLM 선택과 최적화 방향에 실무적 기준을 제공함
+* 링크: https://aclanthology.org/2025.acl-long.718/
+
+2. AI Agent 활용 아이템
+
+* 이름: Google Antigravity 2.0
+* 공개/출시시점: 2026년 5월 19일 (Google I/O 2026 공식 발표)
+* 핵심 기능: 데스크톱 앱·CLI·SDK로 구성된 에이전트 우선(agent-first) 개발 플랫폼. 여러 서브에이전트를 동시에 오케스트레이션하고, 예약 백그라운드 작업과 에디터·터미널·브라우저를 넘나드는 자율 작업 수행을 지원
+* 활용 아이디어:
+  1. Manager 화면에서 여러 에이전트에 작업을 나눠 맡겨 기능 구현·테스트·버그 수정을 병렬로 진행
+  2. CLI로 반복적인 유지보수·리팩터링 작업을 백그라운드에서 예약 실행
+  3. SDK로 커스텀 에이전트를 만들어 자체 인프라에 배포, 사내 워크플로우에 통합
+* 왜 볼만한가: Gemini 3.5 Flash 기반 에이전트 하네스를 데스크톱·CLI·SDK 전 채널로 확장한 최신 공식 릴리스로, 실무 개발 워크플로우에 바로 적용 가능함
+* 링크: https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
