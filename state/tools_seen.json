@@ -4,5 +4,59 @@
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
     "selected_date": "2026-07-01"
+  },
+  {
+    "name": "OpenAI AgentKit",
+    "announcement_date": "2025-10-06",
+    "link": "https://openai.com/index/introducing-agentkit/",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Claude Code Routines",
+    "announcement_date": "2026-04-01",
+    "link": "https://code.claude.com/docs/en/routines",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Microsoft Agent Framework 1.0 (GA)",
+    "announcement_date": "2026-04-03",
+    "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "name": "Anthropic skill-creator update (Test, measure, and refine Agent Skills)",
+    "announcement_date": "2026-03-03",
+    "link": "https://claude.com/blog/improving-skill-creator-test-measure-and-refine-agent-skills",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "name": "Claude Cowork",
+    "announcement_date": "2026-04-09",
+    "link": "https://claude.com/blog/cowork-for-enterprise",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "name": "Tool Search Tool (Claude Developer Platform)",
+    "announcement_date": "2025-11-24",
+    "link": "https://www.anthropic.com/engineering/advanced-tool-use",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "name": "Claude Code Dynamic Workflows",
+    "announcement_date": "2026-05-28",
+    "link": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    "selected_date": "2026-07-03"
+  },
+  {
+    "name": "Google Antigravity 2.0",
+    "announcement_date": "2026-05-19",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+    "selected_date": "2026-07-03"
+  },
+  {
+    "name": "Hermes Agent",
+    "announcement_date": "2026-05-13",
+    "link": "https://github.com/nousresearch/hermes-agent",
+    "selected_date": "2026-07-05"
   }
 ]
