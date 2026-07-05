@@ -5,5 +5,68 @@
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Accurate KV Cache Quantization with Outlier Tokens Tracing",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-long.631/",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction",
+    "venue": "NeurIPS 2025 (Oral)",
+    "publication_date": "2025-12-02",
+    "link": "https://openreview.net/forum?id=JFygzwx8SJ",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10008093",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "MiniKV: Pushing the Limits of 2-Bit KV Cache via Compression and System Co-Design for Efficient Long Context Inference",
+    "venue": "ACL 2025 (Findings)",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.findings-acl.952/",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Cost-efficient Collaboration between On-device and Cloud Language Models (Minions)",
+    "venue": "ICML 2025",
+    "publication_date": "2025-07-13",
+    "link": "https://proceedings.mlr.press/v267/narayan25a.html",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "title": "SlimLM: An Efficient Small Language Model for On-Device Document Assistance",
+    "venue": "ACL 2025 (System Demonstrations)",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-demo.42/",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "title": "Demystifying Small Language Models for Edge Deployment",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-long.718/",
+    "selected_date": "2026-07-03"
+  },
+  {
+    "title": "KV Cache Transform Coding for Compact Storage in LLM Inference (KVTC)",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10008708",
+    "selected_date": "2026-07-04"
+  },
+  {
+    "title": "On-Device Collaborative Language Modeling via a Mixture of Generalists and Specialists",
+    "venue": "ICML 2025",
+    "publication_date": "2025-07-13",
+    "link": "https://icml.cc/virtual/2025/poster/45925",
+    "selected_date": "2026-07-05"
   }
 ]
