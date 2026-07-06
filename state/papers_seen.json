@@ -5,5 +5,12 @@
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
+  },
+  {
+    "title": "On-Device Collaborative Language Modeling via a Mixture of Generalists and Specialists",
+    "venue": "ICML 2025",
+    "publication_date": "2025-07-13",
+    "link": "https://openreview.net/forum?id=rf0ZoDASnS",
+    "selected_date": "2026-07-06"
   }
 ]
