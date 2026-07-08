@@ -10,5 +10,11 @@
     "announcement_date": "2025-10-09",
     "link": "https://claude.com/blog/claude-code-plugins",
     "selected_date": "2026-07-07"
+  },
+  {
+    "name": "Claude Cowork (mobile & web expansion)",
+    "announcement_date": "2026-07-07",
+    "link": "https://claude.com/blog/cowork-web-mobile",
+    "selected_date": "2026-07-08"
   }
 ]
