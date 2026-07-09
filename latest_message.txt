@@ -1,0 +1,26 @@
+[AI Morning Brief - 2026-07-09]
+
+1. On-device AI 논문
+
+* 제목: Sim-LLM: Optimizing LLM Inference at the Edge through Inter-Task KV Reuse
+* 학회/게재시점: NeurIPS 2025 (2025년 12월, OpenReview 공개 2025-10-29)
+* 다루는 문제: 엣지 디바이스에서 LLM을 서빙할 때 GPU 메모리 제약으로 KV 캐시 관리가 병목이 되며, 기존 압축·eviction 기법은 연산 오버헤드가 커 자원 제약 환경에 부적합하다.
+* 핵심 Contribution: 태스크 간 유사도를 활용해 이전에 처리한 유사 태스크의 KV 캐시를 재사용하는 Sim-LLM을 제안. 시퀀스 축소나 압축 없이도 메모리 절감과 처리량 향상을 동시에 달성.
+* 인사이트:
+  1. 압축 대신 "재사용"을 택해 엣지 하드웨어에서도 감당 가능한 낮은 연산 오버헤드로 메모리 문제를 해결.
+  2. SOTA 대비 처리량 최대 39.40%, 메모리 사용량 최대 34.65% 감소.
+  3. 메모리 여유가 곧 배치 크기 확장으로 이어져 다중 요청 처리 엣지 서빙에 특히 유리.
+* 왜 볼만한가: On-device/엣지 환경에서 다중 태스크를 동시에 처리해야 하는 실제 배포 시나리오를 정면으로 다룬 NeurIPS 2025 정식 연구.
+* 링크: https://neurips.cc/virtual/2025/poster/115088
+
+2. AI Agent 활용 아이템
+
+* 이름: Microsoft Agent Framework 1.0
+* 공개/출시시점: 2026-04-03 (정식 GA 발표)
+* 핵심 기능: AutoGen과 Semantic Kernel을 하나로 통합한 프로덕션급 오픈소스 에이전트 SDK. .NET/Python 동일 API로 멀티에이전트 오케스트레이션, 미들웨어, 메모리, MCP/A2A 연동을 지원.
+* 활용 아이디어:
+  1. YAML 선언형 설정으로 에이전트 정의를 버전관리하고 팀 단위로 배포.
+  2. 그래프 기반 워크플로우 엔진으로 분기·병렬 실행이 필요한 멀티에이전트 파이프라인 구성.
+  3. 기존 AutoGen/Semantic Kernel 프로젝트를 안정된 1.0 API로 마이그레이션해 유지보수 부담 절감.
+* 왜 볼만한가: Microsoft가 두 개의 별도 프레임워크를 통합해 내놓은 최초의 안정(1.0) 버전으로, 엔터프라이즈 에이전트 구축의 표준 후보로 빠르게 자리잡는 중.
+* 링크: https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1.0/
