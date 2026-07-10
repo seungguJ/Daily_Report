@@ -5,5 +5,12 @@
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Sim-LLM: Optimizing LLM Inference at the Edge through Inter-Task KV Reuse",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-02",
+    "link": "https://neurips.cc/virtual/2025/poster/115088",
+    "selected_date": "2026-07-10"
   }
 ]
