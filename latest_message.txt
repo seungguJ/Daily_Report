@@ -1,0 +1,26 @@
+[AI Morning Brief - 2026-07-10]
+
+1. On-device AI 논문
+
+* 제목: Sim-LLM: Optimizing LLM Inference at the Edge through Inter-Task KV Reuse
+* 학회/게재시점: NeurIPS 2025 (2025년 12월, 샌디에이고)
+* 다루는 문제: 엣지 디바이스에서 LLM을 서빙할 때 GPU 메모리 제약으로 KV 캐시를 감당하기 어려운 문제
+* 핵심 Contribution: 유사한 태스크 간 KV 캐시를 재사용하는 Inter-Task KV Reuse 기법으로, 정확도 손실을 최소화하면서 메모리와 처리량을 동시에 개선
+* 인사이트:
+  1. 서로 다른 요청이라도 컨텍스트가 유사하면 KV 캐시를 공유해 재계산을 줄일 수 있음
+  2. A40/A100 환경 실험에서 처리량 최대 39.4%, 메모리 사용량 최대 34.65% 절감
+  3. 모델 구조 변경 없이 캐시 재사용 전략만으로 효율을 높여 기존 서빙 파이프라인에 적용하기 용이함
+* 왜 볼만한가: On-device/엣지 추론의 핵심 병목인 KV 캐시 메모리 문제를 재학습 없이 실질적으로 완화하는 접근이라 배포 관점에서 바로 참고할 만함
+* 링크: https://neurips.cc/virtual/2025/poster/115088
+
+2. AI Agent 활용 아이템
+
+* 이름: MCP Apps (Model Context Protocol 공식 확장)
+* 공개/출시시점: 2026년 1월 26일
+* 핵심 기능: MCP 툴이 텍스트 대신 대시보드, 폼, 차트 같은 인터랙티브 UI(ui:// 리소스의 HTML/JS)를 반환해 샌드박스 iframe에서 렌더링하고, JSON-RPC로 양방향 통신하는 공식 확장
+* 활용 아이디어:
+  1. 데이터 조회형 MCP 서버를 텍스트 응답 대신 클릭 가능한 대시보드/폼으로 업그레이드
+  2. Claude, VS Code Insiders, Goose 등 이미 지원하는 클라이언트에서 바로 UI 기반 워크플로우 테스트 가능
+  3. 멀티스텝 작업(설정, 승인, 시각화)을 대화 흐름 안에서 UI로 처리해 반복적인 텍스트 왕복을 줄임
+* 왜 볼만한가: MCP 생태계의 첫 공식 UI 확장으로, 여러 주요 클라이언트가 동시에 지원을 발표해 에이전트 툴 제작자라면 지금 검토해 볼 시점
+* 링크: https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/
