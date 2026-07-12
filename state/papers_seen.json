@@ -12,5 +12,12 @@
     "publication_date": "2025-12-02",
     "link": "https://neurips.cc/virtual/2025/poster/115088",
     "selected_date": "2026-07-10"
+  },
+  {
+    "title": "MobiLoRA: Accelerating LoRA-based LLM Inference on Mobile Devices via Context-aware KV Cache Optimization",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07-27",
+    "link": "https://aclanthology.org/2025.acl-long.1140/",
+    "selected_date": "2026-07-12"
   }
 ]
