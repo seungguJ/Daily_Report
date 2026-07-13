@@ -10,5 +10,11 @@
     "announcement_date": "2026-01-26",
     "link": "https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/",
     "selected_date": "2026-07-10"
+  },
+  {
+    "name": "mcp-server-dev (Agent Skills plugin for building MCP servers)",
+    "announcement_date": "2026-03-20",
+    "link": "https://modelcontextprotocol.io/docs/develop/build-with-agent-skills",
+    "selected_date": "2026-07-13"
   }
 ]
