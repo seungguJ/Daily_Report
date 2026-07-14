@@ -10,5 +10,11 @@
     "announcement_date": "2026-01-26",
     "link": "https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/",
     "selected_date": "2026-07-10"
+  },
+  {
+    "name": "Pydantic AI v2 (Capabilities & the Harness)",
+    "announcement_date": "2026-06-23",
+    "link": "https://pydantic.dev/articles/pydantic-ai-v2",
+    "selected_date": "2026-07-14"
   }
 ]
