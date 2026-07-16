@@ -10,5 +10,13 @@
     "announcement_date": "2026-01-26",
     "link": "https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/",
     "selected_date": "2026-07-10"
+  },
+  {
+    "name": "OpenClaw",
+    "canonical_project_name": "openclaw/openclaw (formerly Clawdbot, briefly Moltbot)",
+    "announcement_date": "2025-11-01 initial release as Clawdbot; renamed to OpenClaw 2026-01-30",
+    "link": "https://github.com/openclaw/openclaw",
+    "selected_date": "2026-07-16",
+    "github_repo": "https://github.com/openclaw/openclaw"
   }
 ]

@@ -12,5 +12,13 @@
     "publication_date": "2025-12-02",
     "link": "https://neurips.cc/virtual/2025/poster/115088",
     "selected_date": "2026-07-10"
+  },
+  {
+    "title": "SlimLM: An Efficient Small Language Model for On-Device Document Assistance",
+    "normalized_title": "slimlm an efficient small language model for on-device document assistance",
+    "venue": "ACL 2025 (System Demonstrations)",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-demo.42/",
+    "selected_date": "2026-07-16"
   }
 ]
