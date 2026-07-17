@@ -1,14 +1,146 @@
 [
   {
     "name": "Anthropic Agent Skills",
+    "canonical_name": "Anthropic Agent Skills",
     "announcement_date": "2025-10-16",
     "link": "https://claude.com/blog/skills",
-    "selected_date": "2026-07-01"
+    "selected_date": "2026-07-01",
+    "github_repository": null
+  },
+  {
+    "name": "Claude Code Dynamic Workflows",
+    "canonical_name": "Claude Code Dynamic Workflows",
+    "announcement_date": "2026-05-28",
+    "link": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    "selected_date": "2026-07-01",
+    "github_repository": null
+  },
+  {
+    "name": "OpenAI AgentKit",
+    "canonical_name": "OpenAI AgentKit",
+    "announcement_date": "2025-10-06",
+    "link": "https://openai.com/index/introducing-agentkit/",
+    "selected_date": "2026-07-01",
+    "github_repository": null
+  },
+  {
+    "name": "Claude Code Routines",
+    "canonical_name": "Claude Code Routines",
+    "announcement_date": "2026-04-01",
+    "link": "https://code.claude.com/docs/en/routines",
+    "selected_date": "2026-07-01",
+    "github_repository": null
+  },
+  {
+    "name": "Anthropic skill-creator update (Test, measure, and refine Agent Skills)",
+    "canonical_name": "Anthropic skill-creator",
+    "announcement_date": "2026-03-03",
+    "link": "https://claude.com/blog/improving-skill-creator-test-measure-and-refine-agent-skills",
+    "selected_date": "2026-07-02",
+    "github_repository": null
+  },
+  {
+    "name": "Tool Search Tool (Claude Developer Platform)",
+    "canonical_name": "Claude Tool Search Tool",
+    "announcement_date": "2025-11-24",
+    "link": "https://www.anthropic.com/engineering/advanced-tool-use",
+    "selected_date": "2026-07-02",
+    "github_repository": null
+  },
+  {
+    "name": "Claude Cowork",
+    "canonical_name": "Claude Cowork",
+    "announcement_date": "2026-04-09",
+    "link": "https://claude.com/blog/cowork-for-enterprise",
+    "selected_date": "2026-07-02",
+    "github_repository": null
+  },
+  {
+    "name": "Google Antigravity 2.0",
+    "canonical_name": "Google Antigravity",
+    "announcement_date": "2026-05-19",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+    "selected_date": "2026-07-03",
+    "github_repository": null
+  },
+  {
+    "name": "Microsoft Agent Framework 1.0 (GA)",
+    "canonical_name": "Microsoft Agent Framework",
+    "announcement_date": "2026-04-03",
+    "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
+    "selected_date": "2026-07-04",
+    "github_repository": "https://github.com/microsoft/agent-framework"
+  },
+  {
+    "name": "Hermes Agent (Nous Research)",
+    "canonical_name": "Hermes Agent",
+    "announcement_date": "2026-05-13",
+    "link": "https://github.com/nousresearch/hermes-agent",
+    "selected_date": "2026-07-05",
+    "github_repository": "https://github.com/nousresearch/hermes-agent"
+  },
+  {
+    "name": "Claude Code Plugins",
+    "canonical_name": "Claude Code Plugins",
+    "announcement_date": "2025-10-09",
+    "link": "https://claude.com/blog/claude-code-plugins",
+    "selected_date": "2026-07-07",
+    "github_repository": null
+  },
+  {
+    "name": "Microsoft Agent Skills for .NET",
+    "canonical_name": "Microsoft Agent Skills for .NET",
+    "announcement_date": "2026-07-07",
+    "link": "https://devblogs.microsoft.com/agent-framework/agent-skills-for-net-is-now-released/",
+    "selected_date": "2026-07-12",
+    "github_repository": "https://github.com/microsoft/agent-framework"
+  },
+  {
+    "name": "mcp-server-dev (MCP 서버 개발용 공식 Agent Skills 플러그인)",
+    "canonical_name": "mcp-server-dev Agent Skills plugin",
+    "announcement_date": "2026-03-20",
+    "link": "https://modelcontextprotocol.io/docs/develop/build-with-agent-skills",
+    "selected_date": "2026-07-13",
+    "github_repository": null
+  },
+  {
+    "name": "Pydantic AI v2",
+    "canonical_name": "Pydantic AI",
+    "announcement_date": "2026-06-23",
+    "link": "https://pydantic.dev/articles/pydantic-ai-v2",
+    "selected_date": "2026-07-14",
+    "github_repository": "https://github.com/pydantic/pydantic-ai"
   },
   {
     "name": "MCP Apps",
+    "canonical_name": "MCP Apps",
     "announcement_date": "2026-01-26",
     "link": "https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/",
-    "selected_date": "2026-07-10"
+    "selected_date": "2026-07-10",
+    "github_repository": null
+  },
+  {
+    "name": "LangGraph 1.0 (LangChain)",
+    "canonical_name": "LangGraph",
+    "announcement_date": "2025-10-01",
+    "link": "https://github.com/langchain-ai/langgraph",
+    "selected_date": "2026-07-15",
+    "github_repository": "https://github.com/langchain-ai/langgraph"
+  },
+  {
+    "name": "OpenClaw (구 Clawdbot/Moltbot)",
+    "canonical_name": "OpenClaw",
+    "announcement_date": "2026-01-30",
+    "link": "https://github.com/openclaw/openclaw",
+    "selected_date": "2026-07-16",
+    "github_repository": "https://github.com/openclaw/openclaw"
+  },
+  {
+    "name": "CrewAI (v1.14.7 — Pluggable Memory/Knowledge/RAG 백엔드)",
+    "canonical_name": "CrewAI",
+    "announcement_date": "2026-06-11",
+    "link": "https://github.com/crewAIInc/crewAI",
+    "selected_date": "2026-07-17",
+    "github_repository": "https://github.com/crewAIInc/crewAI"
   }
 ]

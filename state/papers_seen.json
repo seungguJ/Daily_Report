@@ -1,16 +1,114 @@
 [
   {
     "title": "Speculative Speculative Decoding",
+    "normalized_title": "speculative speculative decoding",
     "venue": "ICLR 2026",
     "publication_date": "2026-04-24",
     "link": "https://iclr.cc/virtual/2026/poster/10008711",
     "selected_date": "2026-07-01"
   },
   {
+    "title": "Accurate KV Cache Quantization with Outlier Tokens Tracing",
+    "normalized_title": "accurate kv cache quantization with outlier tokens tracing",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-long.631/",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction",
+    "normalized_title": "kvzip query-agnostic kv cache compression with context reconstruction",
+    "venue": "NeurIPS 2025 (Oral)",
+    "publication_date": "2025-12-02",
+    "link": "https://neurips.cc/virtual/2025/poster/118741",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters",
+    "normalized_title": "prima.cpp fast 30-70b llm inference on heterogeneous and low-resource home clusters",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10008093",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "MiniKV: Pushing the Limits of 2-Bit KV Cache via Compression and System Co-Design for Efficient Long Context Inference",
+    "normalized_title": "minikv pushing the limits of 2-bit kv cache via compression and system co-design for efficient long context inference",
+    "venue": "ACL 2025 (Findings)",
+    "publication_date": "2025-07-01",
+    "link": "https://aclanthology.org/2025.findings-acl.952/",
+    "selected_date": "2026-07-01"
+  },
+  {
+    "title": "Cost-efficient Collaboration between On-device and Cloud Language Models (MINIONS)",
+    "normalized_title": "cost-efficient collaboration between on-device and cloud language models minions",
+    "venue": "ICML 2025",
+    "publication_date": "2025-07-13",
+    "link": "https://proceedings.mlr.press/v267/narayan25a.html",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "title": "SlimLM: An Efficient Small Language Model for On-Device Document Assistance",
+    "normalized_title": "slimlm an efficient small language model for on-device document assistance",
+    "venue": "ACL 2025 (System Demonstrations)",
+    "publication_date": "2025-07-27",
+    "link": "https://aclanthology.org/2025.acl-demo.42/",
+    "selected_date": "2026-07-02"
+  },
+  {
+    "title": "Demystifying Small Language Models for Edge Deployment",
+    "normalized_title": "demystifying small language models for edge deployment",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-long.718/",
+    "selected_date": "2026-07-03"
+  },
+  {
+    "title": "KV Cache Transform Coding for Compact Storage in LLM Inference (KVTC)",
+    "normalized_title": "kv cache transform coding for compact storage in llm inference kvtc",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10008708",
+    "selected_date": "2026-07-04"
+  },
+  {
+    "title": "On-Device Collaborative Language Modeling via a Mixture of Generalists and Specialists (CoMiGS)",
+    "normalized_title": "on-device collaborative language modeling via a mixture of generalists and specialists comigs",
+    "venue": "ICML 2025",
+    "publication_date": "2025-07-13",
+    "link": "https://icml.cc/virtual/2025/poster/45925",
+    "selected_date": "2026-07-05"
+  },
+  {
+    "title": "R-KV: Redundancy-aware KV Cache Compression for Reasoning Models",
+    "normalized_title": "r-kv redundancy-aware kv cache compression for reasoning models",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-02",
+    "link": "https://neurips.cc/virtual/2025/poster/120110",
+    "selected_date": "2026-07-07"
+  },
+  {
+    "title": "MobiLoRA: Accelerating LoRA-based LLM Inference on Mobile Devices via Context-aware KV Cache Optimization",
+    "normalized_title": "mobilora accelerating lora-based llm inference on mobile devices via context-aware kv cache optimization",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07-28",
+    "link": "https://aclanthology.org/2025.acl-long.1140/",
+    "selected_date": "2026-07-12"
+  },
+  {
     "title": "Sim-LLM: Optimizing LLM Inference at the Edge through Inter-Task KV Reuse",
+    "normalized_title": "sim-llm optimizing llm inference at the edge through inter-task kv reuse",
     "venue": "NeurIPS 2025",
     "publication_date": "2025-12-02",
     "link": "https://neurips.cc/virtual/2025/poster/115088",
     "selected_date": "2026-07-10"
+  },
+  {
+    "title": "AdaSPEC: Selective Knowledge Distillation for Efficient Speculative Decoders",
+    "normalized_title": "adaspec selective knowledge distillation for efficient speculative decoders",
+    "venue": "NeurIPS 2025 (Spotlight)",
+    "publication_date": "2025-12-02",
+    "link": "https://neurips.cc/virtual/2025/poster/115055",
+    "selected_date": "2026-07-17"
   }
 ]
