@@ -10,5 +10,13 @@
     "announcement_date": "2026-01-26",
     "link": "https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/",
     "selected_date": "2026-07-10"
+  },
+  {
+    "name": "LangGraph 1.0",
+    "canonical_project": "LangGraph",
+    "announcement_date": "2025-10-17",
+    "link": "https://github.com/langchain-ai/langgraph",
+    "github_repo": "https://github.com/langchain-ai/langgraph",
+    "selected_date": "2026-07-18"
   }
 ]
