@@ -18,5 +18,13 @@
     "link": "https://github.com/langchain-ai/langgraph",
     "github_repo": "https://github.com/langchain-ai/langgraph",
     "selected_date": "2026-07-18"
+  },
+  {
+    "name": "Agent Skills (addyosmani/agent-skills)",
+    "canonical_project": "agent-skills",
+    "announcement_date": "2026-02-15",
+    "link": "https://github.com/addyosmani/agent-skills",
+    "github_repo": "https://github.com/addyosmani/agent-skills",
+    "selected_date": "2026-07-19"
   }
 ]
