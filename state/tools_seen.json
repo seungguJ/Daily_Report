@@ -18,5 +18,13 @@
     "link": "https://github.com/langchain-ai/langgraph",
     "github_repo": "https://github.com/langchain-ai/langgraph",
     "selected_date": "2026-07-18"
+  },
+  {
+    "name": "OpenClaw",
+    "canonical_project": "OpenClaw (formerly Warelay / Moltbot)",
+    "announcement_date": "2025-11-24",
+    "link": "https://github.com/openclaw/openclaw",
+    "github_repo": "https://github.com/openclaw/openclaw",
+    "selected_date": "2026-07-20"
   }
 ]

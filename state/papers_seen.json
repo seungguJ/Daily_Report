@@ -20,5 +20,13 @@
     "publication_date": "2025-12-02",
     "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/116667",
     "selected_date": "2026-07-18"
+  },
+  {
+    "title": "UniQL: Unified Quantization and Low-rank Compression for Adaptive Edge LLMs",
+    "normalized_title": "uniql unified quantization and low-rank compression for adaptive edge llms",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-23",
+    "link": "https://openreview.net/forum?id=iOGu4wtDTF",
+    "selected_date": "2026-07-20"
   }
 ]
