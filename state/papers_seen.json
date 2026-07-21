@@ -20,5 +20,13 @@
     "publication_date": "2025-12-02",
     "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/116667",
     "selected_date": "2026-07-18"
+  },
+  {
+    "title": "Tequila: Trapping-free Ternary Quantization for Large Language Models",
+    "normalized_title": "tequila trapping-free ternary quantization for large language models",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10011135",
+    "selected_date": "2026-07-21"
   }
 ]

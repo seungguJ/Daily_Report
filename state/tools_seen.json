@@ -18,5 +18,13 @@
     "link": "https://github.com/langchain-ai/langgraph",
     "github_repo": "https://github.com/langchain-ai/langgraph",
     "selected_date": "2026-07-18"
+  },
+  {
+    "name": "Browser Use CLI 3.0 / Browser Harness (Rust core)",
+    "canonical_project": "Browser Use",
+    "announcement_date": "2026-06-08",
+    "link": "https://github.com/browser-use/browser-use",
+    "github_repo": "https://github.com/browser-use/browser-use",
+    "selected_date": "2026-07-21"
   }
 ]
