@@ -18,5 +18,13 @@
     "link": "https://github.com/langchain-ai/langgraph",
     "github_repo": "https://github.com/langchain-ai/langgraph",
     "selected_date": "2026-07-18"
+  },
+  {
+    "name": "Microsoft Agent Framework 1.0",
+    "canonical_project": "Microsoft Agent Framework",
+    "announcement_date": "2026-04-03",
+    "link": "https://github.com/microsoft/agent-framework",
+    "github_repo": "https://github.com/microsoft/agent-framework",
+    "selected_date": "2026-07-22"
   }
 ]
