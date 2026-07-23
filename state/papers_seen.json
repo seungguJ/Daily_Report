@@ -28,5 +28,13 @@
     "publication_date": "2026-04-25",
     "link": "https://iclr.cc/virtual/2026/poster/10006478",
     "selected_date": "2026-07-22"
+  },
+  {
+    "title": "K-Merge: Online Continual Merging of Adapters for On-device Large Language Models",
+    "normalized_title": "k-merge online continual merging of adapters for on-device large language models",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07-02",
+    "link": "https://2026.aclweb.org/program/accepted_papers/",
+    "selected_date": "2026-07-23"
   }
 ]

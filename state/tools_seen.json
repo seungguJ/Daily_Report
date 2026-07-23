@@ -26,5 +26,13 @@
     "link": "https://github.com/microsoft/agent-framework",
     "github_repo": "https://github.com/microsoft/agent-framework",
     "selected_date": "2026-07-22"
+  },
+  {
+    "name": "NVIDIA SkillSpector",
+    "canonical_project": "SkillSpector",
+    "announcement_date": "2026-05-19",
+    "link": "https://github.com/NVIDIA/SkillSpector",
+    "github_repo": "https://github.com/NVIDIA/SkillSpector",
+    "selected_date": "2026-07-23"
   }
 ]
