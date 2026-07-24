@@ -26,5 +26,13 @@
     "link": "https://github.com/microsoft/agent-framework",
     "github_repo": "https://github.com/microsoft/agent-framework",
     "selected_date": "2026-07-22"
+  },
+  {
+    "name": "Google Agent Development Kit (ADK) 2.0",
+    "canonical_project": "Google Agent Development Kit (ADK)",
+    "announcement_date": "2026-05-19",
+    "link": "https://github.com/google/adk-python",
+    "github_repo": "https://github.com/google/adk-python",
+    "selected_date": "2026-07-24"
   }
 ]

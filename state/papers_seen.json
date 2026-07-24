@@ -28,5 +28,13 @@
     "publication_date": "2026-04-25",
     "link": "https://iclr.cc/virtual/2026/poster/10006478",
     "selected_date": "2026-07-22"
+  },
+  {
+    "title": "ThinKV: Thought-Adaptive KV Cache Compression for Efficient Reasoning Models",
+    "normalized_title": "thinkv thought-adaptive kv cache compression for efficient reasoning models",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-24",
+    "link": "https://iclr.cc/virtual/2026/oral/10009981",
+    "selected_date": "2026-07-24"
   }
 ]
