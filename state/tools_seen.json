@@ -26,5 +26,13 @@
     "link": "https://github.com/microsoft/agent-framework",
     "github_repo": "https://github.com/microsoft/agent-framework",
     "selected_date": "2026-07-22"
+  },
+  {
+    "name": "Goose (Linux Foundation Agentic AI Foundation)",
+    "canonical_project": "Goose",
+    "announcement_date": "2026-04-07",
+    "link": "https://github.com/aaif-goose/goose",
+    "github_repo": "https://github.com/aaif-goose/goose",
+    "selected_date": "2026-07-26"
   }
 ]
