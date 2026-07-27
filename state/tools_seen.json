@@ -26,5 +26,13 @@
     "link": "https://github.com/microsoft/agent-framework",
     "github_repo": "https://github.com/microsoft/agent-framework",
     "selected_date": "2026-07-22"
+  },
+  {
+    "name": "Superpowers",
+    "canonical_project": "Superpowers (obra/superpowers)",
+    "announcement_date": "2025-10-09",
+    "link": "https://github.com/obra/superpowers",
+    "github_repo": "https://github.com/obra/superpowers",
+    "selected_date": "2026-07-27"
   }
 ]
