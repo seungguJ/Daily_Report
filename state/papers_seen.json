@@ -36,5 +36,13 @@
     "publication_date": "2025-07",
     "link": "https://aclanthology.org/2025.acl-demo.42/",
     "selected_date": "2026-07-27"
+  },
+  {
+    "title": "STAR-KV: Low-Rank KV Cache Compression via Soft Thresholding for Adaptive Rank Control",
+    "normalized_title": "star-kv low-rank kv cache compression via soft thresholding for adaptive rank control",
+    "venue": "ICML 2026 (Spotlight)",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/61958",
+    "selected_date": "2026-07-28"
   }
 ]
