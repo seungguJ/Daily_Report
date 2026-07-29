@@ -36,5 +36,13 @@
     "publication_date": "2025-07",
     "link": "https://aclanthology.org/2025.acl-demo.42/",
     "selected_date": "2026-07-27"
+  },
+  {
+    "title": "KV Cache Transform Coding for Compact Storage in LLM Inference",
+    "normalized_title": "kv cache transform coding for compact storage in llm inference",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10008708",
+    "selected_date": "2026-07-29"
   }
 ]

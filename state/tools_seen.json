@@ -34,5 +34,13 @@
     "link": "https://github.com/obra/superpowers",
     "github_repo": "https://github.com/obra/superpowers",
     "selected_date": "2026-07-27"
+  },
+  {
+    "name": "OpenCode",
+    "canonical_project": "OpenCode (anomalyco/opencode)",
+    "announcement_date": "2026-07-14",
+    "link": "https://github.com/anomalyco/opencode",
+    "github_repo": "https://github.com/anomalyco/opencode",
+    "selected_date": "2026-07-29"
   }
 ]
