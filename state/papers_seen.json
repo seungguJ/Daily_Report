@@ -36,5 +36,13 @@
     "publication_date": "2025-07",
     "link": "https://aclanthology.org/2025.acl-demo.42/",
     "selected_date": "2026-07-27"
+  },
+  {
+    "title": "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache",
+    "normalized_title": "quantspec self-speculative decoding with hierarchical quantized kv cache",
+    "venue": "ICML 2025",
+    "publication_date": "2025-10-06",
+    "link": "https://icml.cc/virtual/2025/poster/46326",
+    "selected_date": "2026-07-30"
   }
 ]
