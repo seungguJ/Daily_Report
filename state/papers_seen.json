@@ -36,5 +36,13 @@
     "publication_date": "2025-07",
     "link": "https://aclanthology.org/2025.acl-demo.42/",
     "selected_date": "2026-07-27"
+  },
+  {
+    "title": "ReplaceMe: Network Simplification via Depth Pruning and Transformer Block Linearization",
+    "normalized_title": "replaceme network simplification via depth pruning and transformer block linearization",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-02",
+    "link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c10d0c087c14689628124bbc8fa69f6-Abstract-Conference.html",
+    "selected_date": "2026-08-01"
   }
 ]

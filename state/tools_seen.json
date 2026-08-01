@@ -34,5 +34,13 @@
     "link": "https://github.com/obra/superpowers",
     "github_repo": "https://github.com/obra/superpowers",
     "selected_date": "2026-07-27"
+  },
+  {
+    "name": "Mastra 1.0",
+    "canonical_project": "Mastra",
+    "announcement_date": "2026-01-20",
+    "link": "https://github.com/mastra-ai/mastra",
+    "github_repo": "https://github.com/mastra-ai/mastra",
+    "selected_date": "2026-08-01"
   }
 ]
