@@ -36,5 +36,13 @@
     "publication_date": "2025-07",
     "link": "https://aclanthology.org/2025.acl-demo.42/",
     "selected_date": "2026-07-27"
+  },
+  {
+    "title": "Prune-then-Quantize or Quantize-then-Prune? Understanding the Impact of Compression Order in Joint Model Compression",
+    "normalized_title": "prune-then-quantize or quantize-then-prune understanding the impact of compression order in joint model compression",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-23",
+    "link": "https://iclr.cc/virtual/2026/poster/10010118",
+    "selected_date": "2026-08-03"
   }
 ]
