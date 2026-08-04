@@ -44,5 +44,13 @@
     "publication_date": "2026-04-23",
     "link": "https://iclr.cc/virtual/2026/poster/10010118",
     "selected_date": "2026-08-03"
+  },
+  {
+    "title": "Demystifying Small Language Models for Edge Deployment",
+    "normalized_title": "demystifying small language models for edge deployment",
+    "venue": "ACL 2025",
+    "publication_date": "2025-07",
+    "link": "https://aclanthology.org/2025.acl-long.718/",
+    "selected_date": "2026-08-04"
   }
 ]
