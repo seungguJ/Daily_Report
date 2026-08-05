@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "andrej-karpathy-skills (Karpathy-Inspired CLAUDE.md)",
+    "canonical_project": "andrej-karpathy-skills (forrestchang)",
+    "announcement_date": "2026-01-27",
+    "link": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "github_repo": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "selected_date": "2026-08-05"
   }
 ]

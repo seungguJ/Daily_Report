@@ -44,5 +44,13 @@
     "publication_date": "2026-04-23",
     "link": "https://iclr.cc/virtual/2026/poster/10010118",
     "selected_date": "2026-08-03"
+  },
+  {
+    "title": "Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters",
+    "normalized_title": "prima.cpp fast 30-70b llm inference on heterogeneous and low-resource home clusters",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-23",
+    "link": "https://iclr.cc/virtual/2026/poster/10008093",
+    "selected_date": "2026-08-05"
   }
 ]
