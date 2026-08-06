@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "DeerFlow 2.0",
+    "canonical_project": "DeerFlow (ByteDance)",
+    "announcement_date": "2026-06-25",
+    "link": "https://github.com/bytedance/deer-flow",
+    "github_repo": "https://github.com/bytedance/deer-flow",
+    "selected_date": "2026-08-06"
   }
 ]
