@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "NVIDIA-Verified Agent Skills",
+    "canonical_project": "NVIDIA Agent Skills (nvidia/skills)",
+    "announcement_date": "2026-05-19",
+    "link": "https://github.com/nvidia/skills",
+    "github_repo": "https://github.com/nvidia/skills",
+    "selected_date": "2026-08-07"
   }
 ]
