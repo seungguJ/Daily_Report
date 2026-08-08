@@ -44,5 +44,13 @@
     "publication_date": "2026-04-23",
     "link": "https://iclr.cc/virtual/2026/poster/10010118",
     "selected_date": "2026-08-03"
+  },
+  {
+    "title": "ParetoQ: Improving Scaling Laws in Extremely Low-bit LLM Quantization",
+    "normalized_title": "paretoq improving scaling laws in extremely low-bit llm quantization",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12",
+    "link": "https://neurips.cc/virtual/2025/poster/118224",
+    "selected_date": "2026-08-08"
   }
 ]
