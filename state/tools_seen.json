@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "AGENTS.md",
+    "canonical_project": "AGENTS.md (Agentic AI Foundation)",
+    "announcement_date": "2025-08",
+    "link": "https://github.com/agentsmd/agents.md",
+    "github_repo": "https://github.com/agentsmd/agents.md",
+    "selected_date": "2026-08-08"
   }
 ]
