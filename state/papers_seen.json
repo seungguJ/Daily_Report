@@ -44,5 +44,13 @@
     "publication_date": "2026-04-23",
     "link": "https://iclr.cc/virtual/2026/poster/10010118",
     "selected_date": "2026-08-03"
+  },
+  {
+    "title": "SpecEdge: Scalable Edge-Assisted Serving Framework for Interactive LLMs",
+    "normalized_title": "specedge scalable edge-assisted serving framework for interactive llms",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-02",
+    "link": "https://neurips.cc/virtual/2025/poster/119940",
+    "selected_date": "2026-08-09"
   }
 ]

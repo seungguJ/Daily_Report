@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "Letta Code",
+    "canonical_project": "Letta Code (letta-ai/letta-code)",
+    "announcement_date": "2025-12-16",
+    "link": "https://www.letta.com/blog/letta-code/",
+    "github_repo": "https://github.com/letta-ai/letta-code",
+    "selected_date": "2026-08-09"
   }
 ]
