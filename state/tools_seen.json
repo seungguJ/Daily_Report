@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "OpenClaw",
+    "canonical_project": "OpenClaw (formerly Warelay / Moltbot)",
+    "announcement_date": "2025-11",
+    "link": "https://github.com/openclaw/openclaw",
+    "github_repo": "https://github.com/openclaw/openclaw",
+    "selected_date": "2026-08-09"
   }
 ]
