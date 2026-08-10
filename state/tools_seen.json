@@ -42,5 +42,13 @@
     "link": "https://github.com/aaif-goose/goose",
     "github_repo": "https://github.com/aaif-goose/goose",
     "selected_date": "2026-08-03"
+  },
+  {
+    "name": "browser-use",
+    "canonical_project": "browser-use (browser-use/browser-use)",
+    "announcement_date": "2026-01-27",
+    "link": "https://github.com/browser-use/browser-use",
+    "github_repo": "https://github.com/browser-use/browser-use",
+    "selected_date": "2026-08-10"
   }
 ]
