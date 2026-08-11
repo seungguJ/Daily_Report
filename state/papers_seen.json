@@ -52,5 +52,13 @@
     "publication_date": "2025-12",
     "link": "https://papers.nips.cc/paper_files/paper/2025/hash/83b17fb3369b1effa97ca5409526b02e-Abstract-Conference.html",
     "selected_date": "2026-08-10"
+  },
+  {
+    "title": "K-Merge: Online Continual Merging of Adapters for On-device Large Language Models",
+    "normalized_title": "k-merge online continual merging of adapters for on-device large language models",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.acl-long.137/",
+    "selected_date": "2026-08-11"
   }
 ]
