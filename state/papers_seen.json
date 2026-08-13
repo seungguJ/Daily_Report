@@ -68,5 +68,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/66544",
     "selected_date": "2026-08-12"
+  },
+  {
+    "title": "MixKVQ: Query-Aware Mixed-Precision KV Cache Quantization for Long-Context Reasoning",
+    "normalized_title": "mixkvq query-aware mixed-precision kv cache quantization for long-context reasoning",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.acl-long.326/",
+    "selected_date": "2026-08-13"
   }
 ]

@@ -66,5 +66,13 @@
     "link": "https://github.com/NousResearch/hermes-agent",
     "github_repo": "https://github.com/NousResearch/hermes-agent",
     "selected_date": "2026-08-12"
+  },
+  {
+    "name": "Agent Skills (addyosmani/agent-skills)",
+    "canonical_project": "Agent Skills (Addy Osmani)",
+    "announcement_date": "2026-05-03",
+    "link": "https://github.com/addyosmani/agent-skills",
+    "github_repo": "https://github.com/addyosmani/agent-skills",
+    "selected_date": "2026-08-13"
   }
 ]
