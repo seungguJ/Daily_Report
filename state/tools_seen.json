@@ -66,5 +66,13 @@
     "link": "https://github.com/NousResearch/hermes-agent",
     "github_repo": "https://github.com/NousResearch/hermes-agent",
     "selected_date": "2026-08-12"
+  },
+  {
+    "name": "Pi (Pi Coding Agent)",
+    "canonical_project": "Pi Coding Agent (earendil-works/pi, formerly badlogic/pi-mono)",
+    "announcement_date": "2025-08",
+    "link": "https://github.com/earendil-works/pi",
+    "github_repo": "https://github.com/earendil-works/pi",
+    "selected_date": "2026-08-14"
   }
 ]
