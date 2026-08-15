@@ -68,5 +68,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/66544",
     "selected_date": "2026-08-12"
+  },
+  {
+    "title": "MobileLLM-Flash: Latency-Guided On-Device LLM Design for Industry Scale Deployment",
+    "normalized_title": "mobilellm-flash latency-guided on-device llm design for industry scale deployment",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.acl-industry.51/",
+    "selected_date": "2026-08-15"
   }
 ]
