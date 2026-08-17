@@ -66,5 +66,13 @@
     "link": "https://github.com/NousResearch/hermes-agent",
     "github_repo": "https://github.com/NousResearch/hermes-agent",
     "selected_date": "2026-08-12"
+  },
+  {
+    "name": "OpenClaw",
+    "canonical_project": "OpenClaw (openclaw/openclaw, formerly Clawdbot/Moltbot)",
+    "announcement_date": "2025-11-24",
+    "link": "https://github.com/openclaw/openclaw",
+    "github_repo": "https://github.com/openclaw/openclaw",
+    "selected_date": "2026-08-17"
   }
 ]

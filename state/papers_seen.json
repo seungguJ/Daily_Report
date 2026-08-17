@@ -68,5 +68,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/66544",
     "selected_date": "2026-08-12"
+  },
+  {
+    "title": "Distilling LLM Agent into Small Models with Retrieval and Code Tools",
+    "normalized_title": "distilling llm agent into small models with retrieval and code tools",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12",
+    "link": "https://neurips.cc/virtual/2025/poster/117657",
+    "selected_date": "2026-08-17"
   }
 ]
