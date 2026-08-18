@@ -76,5 +76,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/117657",
     "selected_date": "2026-08-17"
+  },
+  {
+    "title": "DP-LLM: Runtime Model Adaptation with Dynamic Layer-wise Precision Assignment",
+    "normalized_title": "dp-llm runtime model adaptation with dynamic layer-wise precision assignment",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12",
+    "link": "https://neurips.cc/virtual/2025/poster/115920",
+    "selected_date": "2026-08-18"
   }
 ]
