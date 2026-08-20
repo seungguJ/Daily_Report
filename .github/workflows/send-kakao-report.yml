@@ -30,7 +30,7 @@ jobs:
           BEFORE="${{ github.event.before }}"
           AFTER="${{ github.sha }}"
 
-          if [[ "$BEFORE" =~ ^0+$ ]]; then
+          if [[ -z "$BEFORE" || "$BEFORE" =~ ^0+$ ]]; then
             CHANGED_FILES=$(git ls-tree -r --name-only "$AFTER" | grep -E '^reports/.*\.md$' || true)
           else
             CHANGED_FILES=$(git diff --name-only "$BEFORE" "$AFTER" -- 'reports/*.md' 'reports/**/*.md' || true)
