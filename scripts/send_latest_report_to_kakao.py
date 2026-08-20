@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 import requests
+from kakao_client import update_github_secret
 
 
 MAX_KAKAO_TEXT_LEN = 2000
@@ -35,8 +36,21 @@ def refresh_access_token() -> str:
     payload = resp.json()
 
     if "refresh_token" in payload:
-        print("WARNING: Kakao returned a new refresh_token.")
-        print("Update GitHub Secret KAKAO_REFRESH_TOKEN with the new value.")
+        new_refresh_token = payload["refresh_token"]
+        gh_pat = os.environ.get("GH_PAT")
+        if gh_pat:
+            try:
+                update_github_secret(
+                    "KAKAO_REFRESH_TOKEN",
+                    new_refresh_token,
+                    os.environ["GITHUB_REPOSITORY"].split("/")[0],
+                    os.environ["GITHUB_REPOSITORY"].split("/")[1],
+                    gh_pat,
+                )
+            except Exception as e:
+                print(f"WARNING: Failed to update GitHub secret: {e}")
+        else:
+            print("WARNING: New refresh token received but GH_PAT not set.")
 
     return payload["access_token"]
 
