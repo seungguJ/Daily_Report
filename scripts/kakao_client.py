@@ -38,4 +38,4 @@ def update_github_secret(secret_name: str, secret_value: str, repo_owner: str, r
 
     response = requests.put(url, headers=heade
     response.raise_for_status()
-    print(f"GitHub secret '{secret_name}' upda
+    print(f"GitHub secret '{secret_name}' updated successfully.")
