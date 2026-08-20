@@ -1,7 +1,6 @@
 import os
 import base64
 import nacl.public
-import nacl.utils
 import nacl.encoding
 import requests
 
@@ -18,24 +17,24 @@ def update_github_secret(secret_name: str, secret_value: str, repo_owner: str, r
     }
 
     # 퍼블릭 키 가져오기
-    key_url = f"{GITHUB_API_URL}/repos/{repo_orets/public-key"
-    key_resp = requests.get(key_url, headers=h
+    key_url = f"{GITHUB_API_URL}/repos/{repo_owner}/{repo_name}/actions/secrets/public-key"
+    key_resp = requests.get(key_url, headers=headers, timeout=20)
     key_resp.raise_for_status()
     key_data = key_resp.json()
     public_key = key_data["key"]
     key_id = key_data["key_id"]
 
     # sodium 라이브러리로 암호화
-    public_key_obj = nacl.public.PublicKey(pubg.Base64Encoder)
-    sealed_box = nacl.public.SealedBox(public_
-    encrypted = sealed_box.encrypt(secret_valu
-    encrypted_b64 = base64.b64encode(encrypted
+    public_key_obj = nacl.public.PublicKey(public_key, encoder=nacl.encoding.Base64Encoder)
+    sealed_box = nacl.public.SealedBox(public_key_obj)
+    encrypted = sealed_box.encrypt(secret_value.encode())
+    encrypted_b64 = base64.b64encode(encrypted.ciphertext).decode()
 
     payload = {
         "encrypted_value": encrypted_b64,
         "key_id": key_id,
     }
 
-    response = requests.put(url, headers=heade
+    response = requests.put(url, headers=headers, json=payload, timeout=20)
     response.raise_for_status()
     print(f"GitHub secret '{secret_name}' updated successfully.")
