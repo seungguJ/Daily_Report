@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "Pi (Pi Agent Harness)",
+    "canonical_project": "Pi (earendil-works/pi, formerly badlogic/pi-mono)",
+    "announcement_date": "2026-05",
+    "link": "https://github.com/earendil-works/pi",
+    "github_repo": "https://github.com/earendil-works/pi",
+    "selected_date": "2026-08-20"
   }
 ]
