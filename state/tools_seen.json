@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "claude-mem",
+    "canonical_project": "claude-mem (thedotmack/claude-mem)",
+    "announcement_date": "2025-12-10",
+    "link": "https://github.com/thedotmack/claude-mem",
+    "github_repo": "https://github.com/thedotmack/claude-mem",
+    "selected_date": "2026-08-20"
   }
 ]
