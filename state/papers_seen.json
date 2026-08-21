@@ -76,5 +76,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/117657",
     "selected_date": "2026-08-17"
+  },
+  {
+    "title": "Speculate Deep and Accurate: Lossless and Training-Free Acceleration for Offloaded LLMs via Substitute Speculative Decoding",
+    "normalized_title": "speculate deep and accurate lossless and training-free acceleration for offloaded llms via substitute speculative decoding",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-02",
+    "link": "https://neurips.cc/virtual/2025/poster/117367",
+    "selected_date": "2026-08-21"
   }
 ]
