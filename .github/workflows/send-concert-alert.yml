@@ -1,0 +1,67 @@
+name: Send Concert Alert to Kakao
+
+on:
+  push:
+    branches:
+      - main
+      - "claude/**"
+    paths:
+      - "concerts/**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-concert-alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find latest changed concert alert
+        id: find_alert
+        shell: bash
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          if [[ -z "$BEFORE" || "$BEFORE" =~ ^0+$ ]]; then
+            CHANGED_FILES=$(git ls-tree -r --name-only "$AFTER" | grep -E '^concerts/.*\.md$' || true)
+          else
+            CHANGED_FILES=$(git diff --name-only "$BEFORE" "$AFTER" -- 'concerts/*.md' 'concerts/**/*.md' || true)
+          fi
+
+          echo "Changed concert files:"
+          echo "$CHANGED_FILES"
+
+          ALERT_FILE=$(echo "$CHANGED_FILES" | sed '/^$/d' | sort | tail -n 1)
+
+          if [ -z "$ALERT_FILE" ]; then
+            echo "No concert alert file in this push. Nothing to send."
+            echo "alert_file=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "alert_file=$ALERT_FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        if: steps.find_alert.outputs.alert_file != ''
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        if: steps.find_alert.outputs.alert_file != ''
+        run: pip install requests pynacl
+
+      - name: Send Kakao concert alert
+        if: steps.find_alert.outputs.alert_file != ''
+        run: python scripts/send_concert_alert_to_kakao.py "${{ steps.find_alert.outputs.alert_file }}"
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+          KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
+          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
+          GH_PAT: ${{ secrets.GH_PAT }}

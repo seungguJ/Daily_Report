@@ -28,7 +28,7 @@ def update_github_secret(secret_name: str, secret_value: str, repo_owner: str, r
     public_key_obj = nacl.public.PublicKey(public_key, encoder=nacl.encoding.Base64Encoder)
     sealed_box = nacl.public.SealedBox(public_key_obj)
     encrypted = sealed_box.encrypt(secret_value.encode())
-    encrypted_b64 = base64.b64encode(encrypted.ciphertext).decode()
+    encrypted_b64 = base64.b64encode(encrypted).decode()
 
     payload = {
         "encrypted_value": encrypted_b64,
