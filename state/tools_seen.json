@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "Pi",
+    "canonical_project": "Pi Coding Agent (earendil-works/pi, formerly badlogic/pi-mono)",
+    "announcement_date": "2025-08-09",
+    "link": "https://github.com/earendil-works/pi",
+    "github_repo": "https://github.com/earendil-works/pi",
+    "selected_date": "2026-08-23"
   }
 ]
