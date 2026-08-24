@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "OpenAI Codex CLI — Subagents",
+    "canonical_project": "OpenAI Codex CLI (openai/codex)",
+    "announcement_date": "2026-03-14",
+    "link": "https://github.com/openai/codex",
+    "github_repo": "https://github.com/openai/codex",
+    "selected_date": "2026-08-24"
   }
 ]
