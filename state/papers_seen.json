@@ -76,5 +76,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/117657",
     "selected_date": "2026-08-17"
+  },
+  {
+    "title": "MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with Open Training Recipes",
+    "normalized_title": "mobilellm-r1 exploring the limits of sub-billion language model reasoners with open training recipes",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04",
+    "link": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/c62fb98c25c2318bf3aca24d3b0fc85e-Abstract-Conference.html",
+    "selected_date": "2026-08-25"
   }
 ]
