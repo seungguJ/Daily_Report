@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "Agent Lightning Skill (v1.0.1)",
+    "canonical_project": "Agent Lightning (microsoft/agent-lightning)",
+    "announcement_date": "2026-08-24",
+    "link": "https://github.com/microsoft/agent-lightning",
+    "github_repo": "https://github.com/microsoft/agent-lightning",
+    "selected_date": "2026-08-25"
   }
 ]
