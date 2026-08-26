@@ -76,5 +76,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/117657",
     "selected_date": "2026-08-17"
+  },
+  {
+    "title": "LO-BCQ: Locally Optimal Block Clustered Quantization for 4-bit (W4A4) LLM Inference",
+    "normalized_title": "lo-bcq locally optimal block clustered quantization for 4-bit (w4a4) llm inference",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-09",
+    "link": "https://icml.cc/virtual/2026/poster/68796",
+    "selected_date": "2026-08-26"
   }
 ]

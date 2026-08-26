@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "NVIDIA SkillSpector",
+    "canonical_project": "SkillSpector (NVIDIA/SkillSpector)",
+    "announcement_date": "2026-06-11",
+    "link": "https://github.com/NVIDIA/SkillSpector",
+    "github_repo": "https://github.com/NVIDIA/SkillSpector",
+    "selected_date": "2026-08-26"
   }
 ]
