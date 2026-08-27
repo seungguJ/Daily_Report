@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "AGENTS.md",
+    "canonical_project": "AGENTS.md (agentsmd/agents.md, Agentic AI Foundation)",
+    "announcement_date": "2025-08-19",
+    "link": "https://github.com/agentsmd/agents.md",
+    "github_repo": "https://github.com/agentsmd/agents.md",
+    "selected_date": "2026-08-27"
   }
 ]

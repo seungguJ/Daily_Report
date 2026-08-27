@@ -76,5 +76,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/117657",
     "selected_date": "2026-08-17"
+  },
+  {
+    "title": "MPCache: MPC-Friendly KV Cache Eviction for Efficient Private LLM Inference",
+    "normalized_title": "mpcache mpc-friendly kv cache eviction for efficient private llm inference",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12",
+    "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/116363",
+    "selected_date": "2026-08-27"
   }
 ]
