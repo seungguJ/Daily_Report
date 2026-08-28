@@ -76,5 +76,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/117657",
     "selected_date": "2026-08-17"
+  },
+  {
+    "title": "ZipMoE: Efficient On-Device MoE Serving via Lossless Compression and Cache-Affinity Scheduling",
+    "normalized_title": "zipmoe efficient on-device moe serving via lossless compression and cache-affinity scheduling",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/64146",
+    "selected_date": "2026-08-28"
   }
 ]

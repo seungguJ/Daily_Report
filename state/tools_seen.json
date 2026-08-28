@@ -74,5 +74,13 @@
     "link": "https://github.com/openclaw/openclaw",
     "github_repo": "https://github.com/openclaw/openclaw",
     "selected_date": "2026-08-17"
+  },
+  {
+    "name": "DeepSeek Harness",
+    "canonical_project": "DeepSeek Harness (deepseek-ai/deepseek-harness)",
+    "announcement_date": "2026-08-13",
+    "link": "https://github.com/deepseek-ai/deepseek-harness",
+    "github_repo": "https://github.com/deepseek-ai/deepseek-harness",
+    "selected_date": "2026-08-28"
   }
 ]
