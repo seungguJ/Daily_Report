@@ -1,0 +1,44 @@
+name: Notify Daily Report App
+
+on:
+  push:
+    branches:
+      - main
+      - "claude/**"
+    paths:
+      - "reports/**.md"
+      - "concerts/**.md"
+      - "state/*.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Daily_Report_App rebuild
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_PAT" ]; then
+            echo "GH_PAT is not set. Skipping dispatch; the app will pick this up on its daily schedule."
+            exit 0
+          fi
+
+          STATUS=$(curl -sS -o /tmp/dispatch.log -w '%{http_code}' \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_PAT" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/seungguJ/Daily_Report_App/dispatches \
+            -d '{"event_type":"content-updated"}')
+
+          if [ "$STATUS" = "204" ]; then
+            echo "Dispatched content-updated to Daily_Report_App."
+          else
+            echo "Dispatch failed with HTTP $STATUS:"
+            cat /tmp/dispatch.log
+            echo "The app will still rebuild on its daily schedule."
+          fi
