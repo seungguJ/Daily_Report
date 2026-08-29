@@ -84,5 +84,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/64146",
     "selected_date": "2026-08-28"
+  },
+  {
+    "title": "LC-QAT: Data-Efficient 2-Bit QAT for LLMs via Linear-Constrained Vector Quantization",
+    "normalized_title": "lc-qat data-efficient 2-bit qat for llms via linear-constrained vector quantization",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/65542",
+    "selected_date": "2026-08-29"
   }
 ]

@@ -82,5 +82,13 @@
     "link": "https://github.com/deepseek-ai/deepseek-harness",
     "github_repo": "https://github.com/deepseek-ai/deepseek-harness",
     "selected_date": "2026-08-28"
+  },
+  {
+    "name": "Ponytail",
+    "canonical_project": "Ponytail (DietrichGebert/ponytail)",
+    "announcement_date": "2026-06-15",
+    "link": "https://github.com/DietrichGebert/ponytail",
+    "github_repo": "https://github.com/DietrichGebert/ponytail",
+    "selected_date": "2026-08-29"
   }
 ]
