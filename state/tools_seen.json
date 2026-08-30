@@ -90,5 +90,13 @@
     "link": "https://github.com/DietrichGebert/ponytail",
     "github_repo": "https://github.com/DietrichGebert/ponytail",
     "selected_date": "2026-08-29"
+  },
+  {
+    "name": "Google Agent Development Kit (ADK) 2.0",
+    "canonical_project": "Agent Development Kit (google/adk-python)",
+    "announcement_date": "2026-05-19",
+    "link": "https://github.com/google/adk-python",
+    "github_repo": "https://github.com/google/adk-python",
+    "selected_date": "2026-08-30"
   }
 ]
