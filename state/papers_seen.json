@@ -100,5 +100,13 @@
     "publication_date": "2026-04-23",
     "link": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/72491c8fd75d85b4b5adf561a15bcd2c-Abstract-Conference.html",
     "selected_date": "2026-08-30"
+  },
+  {
+    "title": "EfficientLLM: Unified Pruning-Aware Pretraining for Auto-Designed Compact Language Models",
+    "normalized_title": "efficientllm unified pruning-aware pretraining for auto-designed compact language models",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07-02",
+    "link": "https://aclanthology.org/2026.acl-long.355/",
+    "selected_date": "2026-08-31"
   }
 ]

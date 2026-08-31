@@ -98,5 +98,13 @@
     "link": "https://github.com/google/adk-python",
     "github_repo": "https://github.com/google/adk-python",
     "selected_date": "2026-08-30"
+  },
+  {
+    "name": "OpenCode",
+    "canonical_project": "OpenCode (anomalyco/opencode, formerly sst/opencode)",
+    "announcement_date": "2026-07-14",
+    "link": "https://github.com/anomalyco/opencode",
+    "github_repo": "https://github.com/anomalyco/opencode",
+    "selected_date": "2026-08-31"
   }
 ]
