@@ -106,5 +106,13 @@
     "link": "https://github.com/anomalyco/opencode",
     "github_repo": "https://github.com/anomalyco/opencode",
     "selected_date": "2026-08-31"
+  },
+  {
+    "name": "Pydantic AI V2 (Harness)",
+    "canonical_project": "Pydantic AI (pydantic/pydantic-ai)",
+    "announcement_date": "2026-06-23",
+    "link": "https://pydantic.dev/articles/pydantic-ai-v2",
+    "github_repo": "https://github.com/pydantic/pydantic-ai",
+    "selected_date": "2026-09-01"
   }
 ]

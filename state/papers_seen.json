@@ -108,5 +108,13 @@
     "publication_date": "2026-07-02",
     "link": "https://aclanthology.org/2026.acl-long.355/",
     "selected_date": "2026-08-31"
+  },
+  {
+    "title": "LEAP: Zone-Aware MCTS for LLM Self-Speculative Decoding",
+    "normalized_title": "leap zone-aware mcts for llm self-speculative decoding",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/63577",
+    "selected_date": "2026-09-01"
   }
 ]
