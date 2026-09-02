@@ -116,5 +116,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/63577",
     "selected_date": "2026-09-01"
+  },
+  {
+    "title": "MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with Open Training Recipes",
+    "normalized_title": "mobilellm-r1 exploring the limits of sub-billion language model reasoners with open training recipes",
+    "venue": "ICLR 2026",
+    "publication_date": "2025-09-29",
+    "link": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/c62fb98c25c2318bf3aca24d3b0fc85e-Abstract-Conference.html",
+    "selected_date": "2026-09-03"
   }
 ]

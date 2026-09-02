@@ -114,5 +114,13 @@
     "link": "https://pydantic.dev/articles/pydantic-ai-v2",
     "github_repo": "https://github.com/pydantic/pydantic-ai",
     "selected_date": "2026-09-01"
+  },
+  {
+    "name": "Google Agent Skills",
+    "canonical_project": "google/skills",
+    "announcement_date": "2026-04-22",
+    "link": "https://github.com/google/skills",
+    "github_repo": "https://github.com/google/skills",
+    "selected_date": "2026-09-03"
   }
 ]
