@@ -122,5 +122,13 @@
     "link": "https://github.com/google/skills",
     "github_repo": "https://github.com/google/skills",
     "selected_date": "2026-09-03"
+  },
+  {
+    "name": "Chrome DevTools MCP",
+    "canonical_project": "chrome-devtools-mcp (ChromeDevTools/chrome-devtools-mcp)",
+    "announcement_date": "2025-09-23",
+    "link": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "github_repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "selected_date": "2026-09-04"
   }
 ]

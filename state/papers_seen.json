@@ -124,5 +124,13 @@
     "publication_date": "2025-09-29",
     "link": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/c62fb98c25c2318bf3aca24d3b0fc85e-Abstract-Conference.html",
     "selected_date": "2026-09-03"
+  },
+  {
+    "title": "Learning To Draft: Adaptive Speculative Decoding with Reinforcement Learning",
+    "normalized_title": "learning to draft adaptive speculative decoding with reinforcement learning",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10010314",
+    "selected_date": "2026-09-04"
   }
 ]
