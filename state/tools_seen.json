@@ -130,5 +130,13 @@
     "link": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
     "github_repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
     "selected_date": "2026-09-04"
+  },
+  {
+    "name": "Cline SDK",
+    "canonical_project": "Cline (cline/cline)",
+    "announcement_date": "2026-05-13",
+    "link": "https://github.com/cline/cline",
+    "github_repo": "https://github.com/cline/cline",
+    "selected_date": "2026-09-05"
   }
 ]

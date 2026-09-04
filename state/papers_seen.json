@@ -132,5 +132,13 @@
     "publication_date": "2026-04-25",
     "link": "https://iclr.cc/virtual/2026/poster/10010314",
     "selected_date": "2026-09-04"
+  },
+  {
+    "title": "DartQuant: Efficient Rotational Distribution Calibration for LLM Quantization",
+    "normalized_title": "dartquant efficient rotational distribution calibration for llm quantization",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12",
+    "link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/d40d7cbe7210f8a13ea0149eeae9c6de-Abstract-Conference.html",
+    "selected_date": "2026-09-05"
   }
 ]
