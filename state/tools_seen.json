@@ -138,5 +138,13 @@
     "link": "https://github.com/cline/cline",
     "github_repo": "https://github.com/cline/cline",
     "selected_date": "2026-09-05"
+  },
+  {
+    "name": "SkillSpector",
+    "canonical_project": "SkillSpector (NVIDIA/SkillSpector)",
+    "announcement_date": "2026-05-19",
+    "link": "https://github.com/NVIDIA/SkillSpector",
+    "github_repo": "https://github.com/NVIDIA/SkillSpector",
+    "selected_date": "2026-09-06"
   }
 ]

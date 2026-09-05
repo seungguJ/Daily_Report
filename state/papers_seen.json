@@ -140,5 +140,13 @@
     "publication_date": "2025-12",
     "link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/d40d7cbe7210f8a13ea0149eeae9c6de-Abstract-Conference.html",
     "selected_date": "2026-09-05"
+  },
+  {
+    "title": "Bridging On-Device and Cloud LLMs for Collaborative Reasoning: A Unified Methodology for Local Routing and Post-Training",
+    "normalized_title": "bridging on-device and cloud llms for collaborative reasoning a unified methodology for local routing and post-training",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/61881",
+    "selected_date": "2026-09-06"
   }
 ]
