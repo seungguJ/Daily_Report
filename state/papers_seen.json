@@ -148,5 +148,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/61881",
     "selected_date": "2026-09-06"
+  },
+  {
+    "title": "GSRQ: Gain-Shape Residual Quantization for Sub-1-bit KV Cache",
+    "normalized_title": "gsrq gain-shape residual quantization for sub-1-bit kv cache",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-09",
+    "link": "https://openreview.net/forum?id=HoRGEhSUdN",
+    "selected_date": "2026-09-07"
   }
 ]

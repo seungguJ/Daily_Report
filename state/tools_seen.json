@@ -146,5 +146,13 @@
     "link": "https://github.com/NVIDIA/SkillSpector",
     "github_repo": "https://github.com/NVIDIA/SkillSpector",
     "selected_date": "2026-09-06"
+  },
+  {
+    "name": "Langflow",
+    "canonical_project": "Langflow (langflow-ai/langflow)",
+    "announcement_date": "2026-09-01",
+    "link": "https://github.com/langflow-ai/langflow",
+    "github_repo": "https://github.com/langflow-ai/langflow",
+    "selected_date": "2026-09-07"
   }
 ]
