@@ -156,5 +156,13 @@
     "publication_date": "2026-07-09",
     "link": "https://openreview.net/forum?id=HoRGEhSUdN",
     "selected_date": "2026-09-07"
+  },
+  {
+    "title": "ParoQuant: Pairwise Rotation Quantization for Efficient Reasoning LLM Inference",
+    "normalized_title": "paroquant pairwise rotation quantization for efficient reasoning llm inference",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-24",
+    "link": "https://iclr.cc/virtual/2026/poster/10011824",
+    "selected_date": "2026-09-08"
   }
 ]

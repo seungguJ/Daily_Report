@@ -154,5 +154,13 @@
     "link": "https://github.com/langflow-ai/langflow",
     "github_repo": "https://github.com/langflow-ai/langflow",
     "selected_date": "2026-09-07"
+  },
+  {
+    "name": "DeerFlow 2.0",
+    "canonical_project": "DeerFlow (bytedance/deer-flow)",
+    "announcement_date": "2026-02-28",
+    "link": "https://github.com/bytedance/deer-flow",
+    "github_repo": "https://github.com/bytedance/deer-flow",
+    "selected_date": "2026-09-08"
   }
 ]
