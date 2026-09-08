@@ -162,5 +162,13 @@
     "link": "https://github.com/bytedance/deer-flow",
     "github_repo": "https://github.com/bytedance/deer-flow",
     "selected_date": "2026-09-08"
+  },
+  {
+    "name": "Skills (mattpocock/skills)",
+    "canonical_project": "Skills for Real Engineers (mattpocock/skills)",
+    "announcement_date": "2026-02-03",
+    "link": "https://github.com/mattpocock/skills",
+    "github_repo": "https://github.com/mattpocock/skills",
+    "selected_date": "2026-09-09"
   }
 ]
