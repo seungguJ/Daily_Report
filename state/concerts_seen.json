@@ -58,5 +58,35 @@
     "ticket_open": "2026-05-28 19:00",
     "link": "https://tickets.interpark.com/contents/notice/detail/13949",
     "selected_date": "2026-09-02"
+  },
+  {
+    "artist": "권진아",
+    "title": "SAVE ME",
+    "performance_date": "2026-11-06",
+    "venue": "서울 명화라이브홀",
+    "city": "서울",
+    "ticket_open": "2026-09-16",
+    "link": "https://kwonjinah.bstage.in/contents/6a9d7398b4028e5648df0cb4",
+    "selected_date": "2026-09-09"
+  },
+  {
+    "artist": "권진아",
+    "title": "SAVE ME",
+    "performance_date": "2026-11-07",
+    "venue": "서울 명화라이브홀",
+    "city": "서울",
+    "ticket_open": "2026-09-16",
+    "link": "https://kwonjinah.bstage.in/contents/6a9d7398b4028e5648df0cb4",
+    "selected_date": "2026-09-09"
+  },
+  {
+    "artist": "권진아",
+    "title": "SAVE ME",
+    "performance_date": "2026-11-08",
+    "venue": "서울 명화라이브홀",
+    "city": "서울",
+    "ticket_open": "2026-09-16",
+    "link": "https://kwonjinah.bstage.in/contents/6a9d7398b4028e5648df0cb4",
+    "selected_date": "2026-09-09"
   }
 ]
