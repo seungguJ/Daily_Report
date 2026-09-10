@@ -178,5 +178,13 @@
     "link": "https://github.com/OpenHands/OpenHands",
     "github_repo": "https://github.com/OpenHands/OpenHands",
     "selected_date": "2026-09-10"
+  },
+  {
+    "name": "Pi",
+    "canonical_project": "Pi (earendil-works/pi, formerly badlogic/pi-mono)",
+    "announcement_date": "2026-04-08",
+    "link": "https://github.com/earendil-works/pi",
+    "github_repo": "https://github.com/earendil-works/pi",
+    "selected_date": "2026-09-11"
   }
 ]
