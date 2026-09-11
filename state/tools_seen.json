@@ -186,5 +186,13 @@
     "link": "https://github.com/earendil-works/pi",
     "github_repo": "https://github.com/earendil-works/pi",
     "selected_date": "2026-09-11"
+  },
+  {
+    "name": "HumanLayer Skills",
+    "canonical_project": "HumanLayer Skills (humanlayer/skills)",
+    "announcement_date": "2026-08-13",
+    "link": "https://github.com/humanlayer/skills",
+    "github_repo": "https://github.com/humanlayer/skills",
+    "selected_date": "2026-09-12"
   }
 ]

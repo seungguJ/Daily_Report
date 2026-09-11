@@ -188,5 +188,13 @@
     "publication_date": "2025-09-18",
     "link": "https://neurips.cc/virtual/2025/poster/117367",
     "selected_date": "2026-09-11"
+  },
+  {
+    "title": "Sherry: Hardware-Efficient 1.25-Bit Ternary Quantization via Fine-grained Sparsification",
+    "normalized_title": "sherry hardware-efficient 1.25-bit ternary quantization via fine-grained sparsification",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.acl-long.513/",
+    "selected_date": "2026-09-12"
   }
 ]
