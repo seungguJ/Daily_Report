@@ -194,5 +194,13 @@
     "link": "https://github.com/humanlayer/skills",
     "github_repo": "https://github.com/humanlayer/skills",
     "selected_date": "2026-09-12"
+  },
+  {
+    "name": "Juggler",
+    "canonical_project": "Juggler (juggler-ai/juggler)",
+    "announcement_date": "2026-07-12",
+    "link": "https://github.com/juggler-ai/juggler",
+    "github_repo": "https://github.com/juggler-ai/juggler",
+    "selected_date": "2026-09-13"
   }
 ]
