@@ -204,5 +204,13 @@
     "publication_date": "2025-09-18",
     "link": "https://neurips.cc/virtual/2025/poster/115920",
     "selected_date": "2026-09-13"
+  },
+  {
+    "title": "Unlocking the Edge Deployment and On-device Acceleration of Multi-LoRA Enabled One-for-All Foundational LLM",
+    "normalized_title": "unlocking the edge deployment and on-device acceleration of multi-lora enabled one-for-all foundational llm",
+    "venue": "ACL 2026 Findings",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.findings-acl.2106/",
+    "selected_date": "2026-09-14"
   }
 ]
