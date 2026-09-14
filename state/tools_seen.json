@@ -210,5 +210,13 @@
     "link": "https://github.com/stablyai/orca",
     "github_repo": "https://github.com/stablyai/orca",
     "selected_date": "2026-09-14"
+  },
+  {
+    "name": "Claude Agent SDK",
+    "canonical_project": "Claude Agent SDK (anthropics/claude-agent-sdk-python, anthropics/claude-agent-sdk-typescript)",
+    "announcement_date": "2025-09-29",
+    "link": "https://github.com/anthropics/claude-agent-sdk-python",
+    "github_repo": "https://github.com/anthropics/claude-agent-sdk-python",
+    "selected_date": "2026-09-15"
   }
 ]

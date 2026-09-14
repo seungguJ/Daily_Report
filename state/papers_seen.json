@@ -212,5 +212,13 @@
     "publication_date": "2026-07",
     "link": "https://aclanthology.org/2026.findings-acl.2106/",
     "selected_date": "2026-09-14"
+  },
+  {
+    "title": "KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction",
+    "normalized_title": "kvzip query-agnostic kv cache compression with context reconstruction",
+    "venue": "NeurIPS 2025 (Oral)",
+    "publication_date": "2025-09-18",
+    "link": "https://neurips.cc/virtual/2025/poster/118741",
+    "selected_date": "2026-09-15"
   }
 ]
