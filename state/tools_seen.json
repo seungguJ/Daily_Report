@@ -218,5 +218,13 @@
     "link": "https://github.com/anthropics/claude-agent-sdk-python",
     "github_repo": "https://github.com/anthropics/claude-agent-sdk-python",
     "selected_date": "2026-09-15"
+  },
+  {
+    "name": "Scientific Agent Skills",
+    "canonical_project": "Scientific Agent Skills (K-Dense-AI/scientific-agent-skills)",
+    "announcement_date": "2026-09-11",
+    "link": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "github_repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "selected_date": "2026-09-16"
   }
 ]

@@ -220,5 +220,13 @@
     "publication_date": "2025-09-18",
     "link": "https://neurips.cc/virtual/2025/poster/118741",
     "selected_date": "2026-09-15"
+  },
+  {
+    "title": "CAS-Spec: Cascade Adaptive Self-Speculative Decoding for On-the-Fly Lossless Inference Acceleration of LLMs",
+    "normalized_title": "cas-spec cascade adaptive self-speculative decoding for on-the-fly lossless inference acceleration of llms",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12",
+    "link": "https://neurips.cc/virtual/2025/poster/116243",
+    "selected_date": "2026-09-16"
   }
 ]
