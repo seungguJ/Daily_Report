@@ -228,5 +228,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/poster/116243",
     "selected_date": "2026-09-16"
+  },
+  {
+    "title": "AegisGuard: RL-Guided Adapter Tuning for TEE-Based Efficient & Secure On-Device Inference",
+    "normalized_title": "aegisguard rl-guided adapter tuning for tee-based efficient secure on-device inference",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-09-18",
+    "link": "https://neurips.cc/virtual/2025/poster/116589",
+    "selected_date": "2026-09-17"
   }
 ]

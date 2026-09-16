@@ -226,5 +226,13 @@
     "link": "https://github.com/K-Dense-AI/scientific-agent-skills",
     "github_repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
     "selected_date": "2026-09-16"
+  },
+  {
+    "name": "Vercel Skills (npx skills)",
+    "canonical_project": "Vercel Skills (vercel-labs/skills)",
+    "announcement_date": "2026-01-20",
+    "link": "https://github.com/vercel-labs/skills",
+    "github_repo": "https://github.com/vercel-labs/skills",
+    "selected_date": "2026-09-17"
   }
 ]
