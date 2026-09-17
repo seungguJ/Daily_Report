@@ -236,5 +236,13 @@
     "publication_date": "2025-09-18",
     "link": "https://neurips.cc/virtual/2025/poster/116589",
     "selected_date": "2026-09-17"
+  },
+  {
+    "title": "Think in Cloud, Look at Edges: Semantic-Driven Query Decomposition for Efficient Video Reasoning",
+    "normalized_title": "think in cloud look at edges semantic-driven query decomposition for efficient video reasoning",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-09",
+    "link": "https://icml.cc/virtual/2026/poster/65867",
+    "selected_date": "2026-09-18"
   }
 ]
