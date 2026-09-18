@@ -242,5 +242,13 @@
     "link": "https://github.com/openai/plugins",
     "github_repo": "https://github.com/openai/plugins",
     "selected_date": "2026-09-18"
+  },
+  {
+    "name": "Pizza Bot",
+    "canonical_project": "Pizza Bot (pizza-bot-app/pizza-bot, formerly Amazon internal JoeBot)",
+    "announcement_date": "2026-09-13",
+    "link": "https://github.com/pizza-bot-app/pizza-bot",
+    "github_repo": "https://github.com/pizza-bot-app/pizza-bot",
+    "selected_date": "2026-09-19"
   }
 ]

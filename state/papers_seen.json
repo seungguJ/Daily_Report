@@ -244,5 +244,13 @@
     "publication_date": "2026-07-09",
     "link": "https://icml.cc/virtual/2026/poster/65867",
     "selected_date": "2026-09-18"
+  },
+  {
+    "title": "Exploring Layer-wise Information Effectiveness for Post-Training Quantization in Small Language Models",
+    "normalized_title": "exploring layer-wise information effectiveness for post-training quantization in small language models",
+    "venue": "ACL Findings 2026",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.findings-acl.771/",
+    "selected_date": "2026-09-19"
   }
 ]
