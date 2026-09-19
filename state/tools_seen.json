@@ -250,5 +250,13 @@
     "link": "https://github.com/pizza-bot-app/pizza-bot",
     "github_repo": "https://github.com/pizza-bot-app/pizza-bot",
     "selected_date": "2026-09-19"
+  },
+  {
+    "name": "gh skill",
+    "canonical_project": "gh skill (GitHub CLI, cli/cli)",
+    "announcement_date": "2026-04-16",
+    "link": "https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/",
+    "github_repo": "https://github.com/cli/cli",
+    "selected_date": "2026-09-20"
   }
 ]

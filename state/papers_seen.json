@@ -252,5 +252,13 @@
     "publication_date": "2026-07",
     "link": "https://aclanthology.org/2026.findings-acl.771/",
     "selected_date": "2026-09-19"
+  },
+  {
+    "title": "PARD: Accelerating LLM Inference with Low-Cost PARallel Draft Model Adaptation",
+    "normalized_title": "pard accelerating llm inference with low cost parallel draft model adaptation",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-01-22",
+    "link": "https://iclr.cc/virtual/2026/poster/10008956",
+    "selected_date": "2026-09-20"
   }
 ]
