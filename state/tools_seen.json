@@ -258,5 +258,13 @@
     "link": "https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/",
     "github_repo": "https://github.com/cli/cli",
     "selected_date": "2026-09-20"
+  },
+  {
+    "name": "Crush",
+    "canonical_project": "Crush (charmbracelet/crush)",
+    "announcement_date": "2026-09-16",
+    "link": "https://github.com/charmbracelet/crush",
+    "github_repo": "https://github.com/charmbracelet/crush",
+    "selected_date": "2026-09-21"
   }
 ]

@@ -260,5 +260,13 @@
     "publication_date": "2026-01-22",
     "link": "https://iclr.cc/virtual/2026/poster/10008956",
     "selected_date": "2026-09-20"
+  },
+  {
+    "title": "UniQL: Unified Quantization and Low-rank Compression for Adaptive Edge LLMs",
+    "normalized_title": "uniql unified quantization and low-rank compression for adaptive edge llms",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-01-22",
+    "link": "https://iclr.cc/virtual/2026/poster/10007967",
+    "selected_date": "2026-09-21"
   }
 ]
