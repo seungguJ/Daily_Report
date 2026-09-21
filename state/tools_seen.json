@@ -266,5 +266,13 @@
     "link": "https://github.com/charmbracelet/crush",
     "github_repo": "https://github.com/charmbracelet/crush",
     "selected_date": "2026-09-21"
+  },
+  {
+    "name": "Agent Client Protocol (ACP)",
+    "canonical_project": "Agent Client Protocol (zed-industries/agent-client-protocol)",
+    "announcement_date": "2026-01-28",
+    "link": "https://github.com/zed-industries/agent-client-protocol",
+    "github_repo": "https://github.com/zed-industries/agent-client-protocol",
+    "selected_date": "2026-09-22"
   }
 ]
