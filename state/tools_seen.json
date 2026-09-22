@@ -274,5 +274,13 @@
     "link": "https://github.com/zed-industries/agent-client-protocol",
     "github_repo": "https://github.com/zed-industries/agent-client-protocol",
     "selected_date": "2026-09-22"
+  },
+  {
+    "name": "nanobot",
+    "canonical_project": "nanobot (HKUDS/nanobot)",
+    "announcement_date": "2026-02-01",
+    "link": "https://github.com/HKUDS/nanobot",
+    "github_repo": "https://github.com/HKUDS/nanobot",
+    "selected_date": "2026-09-23"
   }
 ]

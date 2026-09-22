@@ -276,5 +276,13 @@
     "publication_date": "2026-04-30",
     "link": "https://icml.cc/virtual/2026/poster/61392",
     "selected_date": "2026-09-22"
+  },
+  {
+    "title": "Two-Stage Regularization-Based Structured Pruning for LLMs",
+    "normalized_title": "two-stage regularization-based structured pruning for llms",
+    "venue": "ACL 2026",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.acl-long.136/",
+    "selected_date": "2026-09-23"
   }
 ]
