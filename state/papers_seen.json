@@ -292,5 +292,13 @@
     "publication_date": "2026-04-25",
     "link": "https://iclr.cc/virtual/2026/poster/10008708",
     "selected_date": "2026-09-24"
+  },
+  {
+    "title": "SmartAD: Capacity-Aligned Agent Distillation for Small Language Models",
+    "normalized_title": "smartad capacity-aligned agent distillation for small language models",
+    "venue": "ACL 2026 Findings",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.findings-acl.1349/",
+    "selected_date": "2026-09-25"
   }
 ]
