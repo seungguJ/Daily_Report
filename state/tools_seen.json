@@ -298,5 +298,13 @@
     "link": "https://github.com/cloudflare/security-audit-skill",
     "github_repo": "https://github.com/cloudflare/security-audit-skill",
     "selected_date": "2026-09-25"
+  },
+  {
+    "name": "mini-swe-agent v2.0",
+    "canonical_project": "mini-swe-agent (SWE-agent/mini-swe-agent)",
+    "announcement_date": "2026-02-11",
+    "link": "https://github.com/SWE-agent/mini-swe-agent",
+    "github_repo": "https://github.com/SWE-agent/mini-swe-agent",
+    "selected_date": "2026-09-26"
   }
 ]

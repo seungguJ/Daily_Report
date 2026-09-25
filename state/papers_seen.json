@@ -300,5 +300,13 @@
     "publication_date": "2026-07",
     "link": "https://aclanthology.org/2026.findings-acl.1349/",
     "selected_date": "2026-09-25"
+  },
+  {
+    "title": "Equilibrium Language Models",
+    "normalized_title": "equilibrium language models",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-24",
+    "link": "https://openreview.net/forum?id=lqJT6xmuH3",
+    "selected_date": "2026-09-26"
   }
 ]
