@@ -306,5 +306,13 @@
     "link": "https://github.com/SWE-agent/mini-swe-agent",
     "github_repo": "https://github.com/SWE-agent/mini-swe-agent",
     "selected_date": "2026-09-26"
+  },
+  {
+    "name": "GitHub Agentic Workflows (gh-aw)",
+    "canonical_project": "GitHub Agentic Workflows (github/gh-aw)",
+    "announcement_date": "2026-02-13",
+    "link": "https://github.com/github/gh-aw",
+    "github_repo": "https://github.com/github/gh-aw",
+    "selected_date": "2026-09-27"
   }
 ]

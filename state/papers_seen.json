@@ -308,5 +308,13 @@
     "publication_date": "2026-04-24",
     "link": "https://openreview.net/forum?id=lqJT6xmuH3",
     "selected_date": "2026-09-26"
+  },
+  {
+    "title": "SpecBranch: Speculative Decoding via Hybrid Drafting and Rollback-Aware Branch Parallelism",
+    "normalized_title": "specbranch speculative decoding via hybrid drafting and rollback-aware branch parallelism",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-04-25",
+    "link": "https://iclr.cc/virtual/2026/poster/10010904",
+    "selected_date": "2026-09-27"
   }
 ]
