@@ -316,5 +316,13 @@
     "publication_date": "2026-04-25",
     "link": "https://iclr.cc/virtual/2026/poster/10010904",
     "selected_date": "2026-09-27"
+  },
+  {
+    "title": "OmniDraft: A Cross-vocabulary, Online Adaptive Drafter for On-device Speculative Decoding",
+    "normalized_title": "omnidraft a cross-vocabulary online adaptive drafter for on-device speculative decoding",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-05",
+    "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/118052",
+    "selected_date": "2026-09-28"
   }
 ]

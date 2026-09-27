@@ -314,5 +314,13 @@
     "link": "https://github.com/github/gh-aw",
     "github_repo": "https://github.com/github/gh-aw",
     "selected_date": "2026-09-27"
+  },
+  {
+    "name": "NVIDIA Agent Skills",
+    "canonical_project": "NVIDIA Agent Skills (NVIDIA/skills)",
+    "announcement_date": "2026-05-31",
+    "link": "https://github.com/NVIDIA/skills",
+    "github_repo": "https://github.com/NVIDIA/skills",
+    "selected_date": "2026-09-28"
   }
 ]
