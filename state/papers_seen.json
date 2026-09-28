@@ -324,5 +324,13 @@
     "publication_date": "2025-12-05",
     "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/118052",
     "selected_date": "2026-09-28"
+  },
+  {
+    "title": "ReMoE: Boosting Expert Reuse through Router Fine-Tuning in Memory-Constrained MoE LLM Inference",
+    "normalized_title": "remoe boosting expert reuse through router fine-tuning in memory-constrained moe llm inference",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/60585",
+    "selected_date": "2026-09-29"
   }
 ]

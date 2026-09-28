@@ -322,5 +322,13 @@
     "link": "https://github.com/NVIDIA/skills",
     "github_repo": "https://github.com/NVIDIA/skills",
     "selected_date": "2026-09-28"
+  },
+  {
+    "name": "RTK (Rust Token Killer)",
+    "canonical_project": "RTK (rtk-ai/rtk)",
+    "announcement_date": "2026-03-10",
+    "link": "https://github.com/rtk-ai/rtk",
+    "github_repo": "https://github.com/rtk-ai/rtk",
+    "selected_date": "2026-09-29"
   }
 ]
