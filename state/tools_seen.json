@@ -338,5 +338,13 @@
     "link": "https://github.com/vectorize-io/hindsight",
     "github_repo": "https://github.com/vectorize-io/hindsight",
     "selected_date": "2026-09-30"
+  },
+  {
+    "name": "Paperclip",
+    "canonical_project": "paperclipai/paperclip",
+    "announcement_date": "2026-09-21",
+    "link": "https://github.com/paperclipai/paperclip",
+    "github_repo": "https://github.com/paperclipai/paperclip",
+    "selected_date": "2026-10-01"
   }
 ]

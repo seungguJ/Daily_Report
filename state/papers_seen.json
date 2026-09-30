@@ -340,5 +340,13 @@
     "publication_date": "2025-12-02",
     "link": "https://neurips.cc/virtual/2025/poster/119940",
     "selected_date": "2026-09-30"
+  },
+  {
+    "title": "Long-Context Modeling with Dynamic Hierarchical Sparse Attention for Memory-Constrained LLM Inference",
+    "normalized_title": "longcontext modeling with dynamic hierarchical sparse attention for memoryconstrained llm inference",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-08",
+    "link": "https://icml.cc/virtual/2026/poster/61654",
+    "selected_date": "2026-10-01"
   }
 ]
