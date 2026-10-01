@@ -346,5 +346,13 @@
     "link": "https://github.com/paperclipai/paperclip",
     "github_repo": "https://github.com/paperclipai/paperclip",
     "selected_date": "2026-10-01"
+  },
+  {
+    "name": "Archify",
+    "canonical_project": "Archify (tt-a1i/archify)",
+    "announcement_date": "2026-09-28",
+    "link": "https://github.com/tt-a1i/archify",
+    "github_repo": "https://github.com/tt-a1i/archify",
+    "selected_date": "2026-10-02"
   }
 ]

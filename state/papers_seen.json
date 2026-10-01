@@ -348,5 +348,13 @@
     "publication_date": "2026-07-08",
     "link": "https://icml.cc/virtual/2026/poster/61654",
     "selected_date": "2026-10-01"
+  },
+  {
+    "title": "LiftQuant: Continuous Bit-Width Control for Pareto-Optimal LLM Deployment",
+    "normalized_title": "liftquant continuous bit width control for pareto optimal llm deployment",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-07",
+    "link": "https://icml.cc/virtual/2026/poster/66695",
+    "selected_date": "2026-10-02"
   }
 ]
