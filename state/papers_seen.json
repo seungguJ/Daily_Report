@@ -356,5 +356,13 @@
     "publication_date": "2026-07-07",
     "link": "https://icml.cc/virtual/2026/poster/66695",
     "selected_date": "2026-10-02"
+  },
+  {
+    "title": "Faster Activation Functions at the Edge for Post-Training Speedups",
+    "normalized_title": "faster activation functions at the edge for post training speedups",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-09",
+    "link": "https://icml.cc/virtual/2026/poster/61061",
+    "selected_date": "2026-10-03"
   }
 ]

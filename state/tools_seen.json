@@ -354,5 +354,13 @@
     "link": "https://github.com/tt-a1i/archify",
     "github_repo": "https://github.com/tt-a1i/archify",
     "selected_date": "2026-10-02"
+  },
+  {
+    "name": "HyperFrames",
+    "canonical_project": "HyperFrames (heygen-com/hyperframes)",
+    "announcement_date": "2026-03-10",
+    "link": "https://github.com/heygen-com/hyperframes",
+    "github_repo": "https://github.com/heygen-com/hyperframes",
+    "selected_date": "2026-10-03"
   }
 ]
