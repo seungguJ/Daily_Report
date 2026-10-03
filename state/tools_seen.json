@@ -362,5 +362,13 @@
     "link": "https://github.com/heygen-com/hyperframes",
     "github_repo": "https://github.com/heygen-com/hyperframes",
     "selected_date": "2026-10-03"
+  },
+  {
+    "name": "OmniRoute",
+    "canonical_project": "OmniRoute (diegosouzapw/OmniRoute)",
+    "announcement_date": "2026-09-29",
+    "link": "https://github.com/diegosouzapw/OmniRoute",
+    "github_repo": "https://github.com/diegosouzapw/OmniRoute",
+    "selected_date": "2026-10-04"
   }
 ]
