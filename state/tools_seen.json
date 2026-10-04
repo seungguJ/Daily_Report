@@ -370,5 +370,13 @@
     "link": "https://github.com/diegosouzapw/OmniRoute",
     "github_repo": "https://github.com/diegosouzapw/OmniRoute",
     "selected_date": "2026-10-04"
+  },
+  {
+    "name": "Agent Skills (addyosmani/agent-skills)",
+    "canonical_project": "Agent Skills (addyosmani/agent-skills)",
+    "announcement_date": "2026-10-03",
+    "link": "https://github.com/addyosmani/agent-skills",
+    "github_repo": "https://github.com/addyosmani/agent-skills",
+    "selected_date": "2026-10-05"
   }
 ]
