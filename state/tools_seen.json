@@ -378,5 +378,13 @@
     "link": "https://github.com/addyosmani/agent-skills",
     "github_repo": "https://github.com/addyosmani/agent-skills",
     "selected_date": "2026-10-05"
+  },
+  {
+    "name": "Harness (revfactory/harness)",
+    "canonical_project": "revfactory/harness",
+    "announcement_date": "2026-09-26",
+    "link": "https://github.com/revfactory/harness",
+    "github_repo": "https://github.com/revfactory/harness",
+    "selected_date": "2026-10-06"
   }
 ]
