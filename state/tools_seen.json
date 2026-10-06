@@ -386,5 +386,13 @@
     "link": "https://github.com/revfactory/harness",
     "github_repo": "https://github.com/revfactory/harness",
     "selected_date": "2026-10-06"
+  },
+  {
+    "name": "CrewAI",
+    "canonical_project": "crewAIInc/crewAI",
+    "announcement_date": "2025-10-20",
+    "link": "https://github.com/crewAIInc/crewAI",
+    "github_repo": "https://github.com/crewAIInc/crewAI",
+    "selected_date": "2026-10-07"
   }
 ]
