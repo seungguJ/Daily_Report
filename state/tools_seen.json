@@ -394,5 +394,13 @@
     "link": "https://github.com/crewAIInc/crewAI",
     "github_repo": "https://github.com/crewAIInc/crewAI",
     "selected_date": "2026-10-07"
+  },
+  {
+    "name": "Agent-Reach",
+    "canonical_project": "Panniantong/Agent-Reach",
+    "announcement_date": "2026-06-11",
+    "link": "https://github.com/Panniantong/Agent-Reach",
+    "github_repo": "https://github.com/Panniantong/Agent-Reach",
+    "selected_date": "2026-10-08"
   }
 ]

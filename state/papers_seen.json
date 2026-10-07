@@ -396,5 +396,13 @@
     "publication_date": "2025-12",
     "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/119656",
     "selected_date": "2026-10-07"
+  },
+  {
+    "title": "Tiny but Mighty: A Software-Hardware Co-Design Approach for Efficient Multimodal Inference on Battery-Powered Small Devices",
+    "normalized_title": "tiny but mighty a software hardware co design approach for efficient multimodal inference on battery powered small devices",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-01-26",
+    "link": "https://openreview.net/forum?id=ql30VWGyda",
+    "selected_date": "2026-10-08"
   }
 ]
