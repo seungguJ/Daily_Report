@@ -410,5 +410,13 @@
     "link": "https://github.com/agno-agi/agno",
     "github_repo": "https://github.com/agno-agi/agno",
     "selected_date": "2026-10-09"
+  },
+  {
+    "name": "ECC (Everything Claude Code)",
+    "canonical_project": "ECC (affaan-m/ECC, formerly everything-claude-code)",
+    "announcement_date": "2026-10-01",
+    "link": "https://github.com/affaan-m/ECC",
+    "github_repo": "https://github.com/affaan-m/ECC",
+    "selected_date": "2026-10-10"
   }
 ]
