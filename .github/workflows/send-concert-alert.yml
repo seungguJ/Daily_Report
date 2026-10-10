@@ -1,12 +1,7 @@
 name: Send Concert Alert to Kakao
 
+# 자동 발송 중단: 웹/앱으로 확인하므로 push 트리거 제거. 수동 실행(workflow_dispatch)만 유지.
 on:
-  push:
-    branches:
-      - main
-      - "claude/**"
-    paths:
-      - "concerts/**.md"
   workflow_dispatch:
 
 permissions:
