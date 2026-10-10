@@ -418,5 +418,13 @@
     "link": "https://github.com/affaan-m/ECC",
     "github_repo": "https://github.com/affaan-m/ECC",
     "selected_date": "2026-10-10"
+  },
+  {
+    "name": "claude-mem",
+    "canonical_project": "thedotmack/claude-mem",
+    "announcement_date": "2026-10-09",
+    "link": "https://github.com/thedotmack/claude-mem",
+    "github_repo": "https://github.com/thedotmack/claude-mem",
+    "selected_date": "2026-10-11"
   }
 ]

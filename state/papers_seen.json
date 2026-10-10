@@ -420,5 +420,13 @@
     "publication_date": "2026-04-25",
     "link": "https://iclr.cc/virtual/2026/poster/10008643",
     "selected_date": "2026-10-10"
+  },
+  {
+    "title": "Memory-Efficient Structured Backpropagation for On-Device LLM Fine-Tuning",
+    "normalized_title": "memory efficient structured backpropagation for on device llm fine tuning",
+    "venue": "ACL 2026 (Industry Track)",
+    "publication_date": "2026-07",
+    "link": "https://aclanthology.org/2026.acl-industry.62/",
+    "selected_date": "2026-10-11"
   }
 ]
