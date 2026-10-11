@@ -1,26 +1,26 @@
-[AI Morning Brief - 2026-10-11]
+[AI Morning Brief - 2026-10-12]
 
 1. On-device AI 논문
 
-* 제목: Memory-Efficient Structured Backpropagation for On-Device LLM Fine-Tuning
-* 학회/게재시점: ACL 2026 (Industry Track, 64th Annual Meeting 프로시딩) / 2026년 7월
-* 다루는 문제: 메모리가 빠듯한 기기에서 LLM을 직접 파인튜닝하기 어려운 문제
-* 핵심 Contribution: LoRA의 저랭크 구조를 활용해 역전파를 수작업으로 유도하고, 중간 투영값을 저장하는 대신 역전파 때 재계산해 메모리를 줄임
+* 제목: KeyDiff: Key Similarity-Based KV Cache Eviction for Long-Context LLM Inference in Resource-Constrained Environments
+* 학회/게재시점: NeurIPS 2025 (Main Conference Track) / 2025년 12월
+* 다루는 문제: 메모리가 제한된 환경에서 긴 프롬프트를 처리할 때 KV 캐시가 커져 추론이 막히는 문제
+* 핵심 Contribution: 어텐션 점수 없이 key끼리의 코사인 유사도만으로 버릴 토큰을 고르는 학습 불필요(training-free) KV 캐시 축출 기법. 평균 key를 기준 벡터로 써서 O(n)에 계산하고, 블록 단위로 캐시를 고정 예산까지 줄여 가며 처리함
 * 인사이트:
-  1. Qwen2.5-0.5B 기준 피크 메모리 361MB → 136MB (약 62% 감소), 연산 오버헤드는 약 28%.
-  2. Qwen2.5 0.5B~3B 전반에서 기존 MeBP 대비 평균 49% 절감하고, 그래디언트는 수학적으로 동일함.
-  3. 제로차 방식(MeZO)은 실제 그래디언트와 상관이 거의 없어(코사인 유사도 약 0.001) 수렴이 느리다는 점을 짚음. 다만 측정은 폰이 아니라 Apple Silicon 기준.
-* 왜 볼만한가: 추론만이 아니라 "내 기기에서 개인화 학습"까지 가능한 메모리 수준으로 내려왔다는 신호라서 온디바이스 개인화 관점에서 볼만함.
-* 링크: https://aclanthology.org/2026.acl-industry.62/
+  1. 서로 다른(독특한) key일수록 어텐션 점수가 높다는 관찰이 출발점이고, 이를 이론적으로 뒷받침함.
+  2. 어텐션 행렬을 만들지 않아 FlashAttention과 호환되고, 기존 축출 기법(TOVA, SnapKV) 대비 end-to-end 지연이 최대 30% 감소함.
+  3. LongBench 8K 캐시 예산(KV 약 23% 절감)에서 Llama 3.1-8B, 3.2-3B 모두 원본 대비 성능 차이가 0.04% 미만. 다만 예산이 작을수록(2K) 손실이 커지고, 실제 폰 측정은 아니며 GQA 모델 중심 평가임.
+* 왜 볼만한가: 온디바이스에서는 모델 가중치만큼 KV 캐시가 메모리 병목인데, 추가 학습 없이 기존 모델에 바로 붙일 수 있는 가벼운 방식이라 실무 적용 가능성이 높음.
+* 링크: https://papers.neurips.cc/paper_files/paper/2025/hash/0907335ecf28faf15be54485dbcbe70e-Abstract-Conference.html
 
 2. AI Agent 활용 아이템
 
-* 이름: claude-mem
-* 공개/출시시점: v13 메이저 라인 (2026년 6월 v13.8.0), 최신 v13.35.0 릴리스 2026-10-09
-* 핵심 기능: 에이전트 세션의 도구 사용을 캡처해 AI로 압축·요약하고(SQLite 저장), 다음 세션 시작 때 관련 맥락을 자동 주입하는 영속 메모리 플러그인. Claude Code, Codex, Gemini, OpenCode 등 지원.
+* 이름: Graphify
+* 공개/출시시점: 2026-04-04 첫 PyPI 릴리스(v0.1.1), 최신 v0.9.86 릴리스 2026-10-11
+* 핵심 기능: 코드베이스와 문서, SQL, 설정, PDF를 지식 그래프로 만들어 `/graphify` 스킬로 질의하게 해 주는 도구. 코드는 tree-sitter로 로컬 파싱(LLM 없음)하고, 결과는 graph.html, GRAPH_REPORT.md, graph.json으로 저장됨. Claude Code, Cursor, Codex, Gemini CLI 등 지원.
 * 활용 아이디어:
-  1. 며칠에 걸친 리팩터링에서 어제의 결정과 삽질 기록을 새 세션에 자동으로 이어받기.
-  2. 여러 에이전트(Claude Code, Codex 등)를 오가며 같은 프로젝트 맥락 공유하기.
-  3. 민감한 내용은 private 태그로 제외하고, 팀 온보딩용 작업 이력 검색으로 활용하기.
-* 왜 볼만한가: GitHub 별 약 99.2k, 포크 8.7k, 이번 주 트렌딩(주간 +3.85k)에서 상위권이고, 최신 릴리스가 이틀 전일 만큼 유지보수가 활발함. 설치는 `npx claude-mem install` 한 줄. 같은 주 트렌딩 후보(openrig, text-to-cad 등)보다 도입 범위와 채택 규모가 커서 선정. 다만 모든 툴 호출에 훅이 걸리고 활동 내용을 저장하므로 보안·프라이버시 검토 필요(미해결 PR 140건, 이슈 48건). HN/Reddit 직접 반응은 확인하지 못해 커뮤니티 평가는 별 수·포크·트렌딩 기준.
-* 링크: https://github.com/thedotmack/claude-mem
+  1. 낯선 레포에 투입될 때 `graphify query`로 "이 흐름이 어디서 어디로 가나"를 grep 없이 먼저 파악하기.
+  2. `GRAPH_REPORT.md`를 에이전트 컨텍스트로 넘겨 탐색 토큰을 줄이기.
+  3. 여러 저장소와 문서를 하나의 그래프로 묶어 구조 질문(영향 범위, 경로)에 쓰기.
+* 왜 볼만한가: GitHub 별 약 125.5k, 포크 약 12.1k이고 릴리스가 매일 나올 만큼 활발함. 설치는 `uv tool install graphifyy` 후 `graphify install` 두 줄이면 됨. 같은 주 후보 중 릴리스가 없거나(gstack) 도입 범위가 좁은 도구보다 범용성이 커서 선정. 다만 열린 이슈 693건, PR 843건에 언어별 추출 정확도 문제와 셸 인젝션 보고(#4309)가 있고, 토큰 절감 수치는 프로젝트 자체 주장이라 검증이 필요함. HN/Reddit 직접 반응은 확인하지 못했고, 2차 블로그 리뷰와 GitHub 지표 기준으로 판단함.
+* 링크: https://github.com/Graphify-Labs/graphify

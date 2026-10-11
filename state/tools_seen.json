@@ -426,5 +426,13 @@
     "link": "https://github.com/thedotmack/claude-mem",
     "github_repo": "https://github.com/thedotmack/claude-mem",
     "selected_date": "2026-10-11"
+  },
+  {
+    "name": "Graphify",
+    "canonical_project": "Graphify-Labs/graphify",
+    "announcement_date": "2026-04-04",
+    "link": "https://github.com/Graphify-Labs/graphify",
+    "github_repo": "https://github.com/Graphify-Labs/graphify",
+    "selected_date": "2026-10-12"
   }
 ]

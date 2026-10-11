@@ -428,5 +428,13 @@
     "publication_date": "2026-07",
     "link": "https://aclanthology.org/2026.acl-industry.62/",
     "selected_date": "2026-10-11"
+  },
+  {
+    "title": "KeyDiff: Key Similarity-Based KV Cache Eviction for Long-Context LLM Inference in Resource-Constrained Environments",
+    "normalized_title": "keydiff key similaritybased kv cache eviction for longcontext llm inference in resourceconstrained environments",
+    "venue": "NeurIPS 2025",
+    "publication_date": "2025-12-02",
+    "link": "https://papers.neurips.cc/paper_files/paper/2025/hash/0907335ecf28faf15be54485dbcbe70e-Abstract-Conference.html",
+    "selected_date": "2026-10-12"
   }
 ]
