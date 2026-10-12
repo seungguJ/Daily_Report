@@ -436,5 +436,13 @@
     "publication_date": "2025-12-02",
     "link": "https://papers.neurips.cc/paper_files/paper/2025/hash/0907335ecf28faf15be54485dbcbe70e-Abstract-Conference.html",
     "selected_date": "2026-10-12"
+  },
+  {
+    "title": "Neodragon: Mobile Video Generation Using Diffusion Transformer",
+    "normalized_title": "neodragon mobile video generation using diffusion transformer",
+    "venue": "ICLR 2026",
+    "publication_date": "2026-01-26",
+    "link": "https://iclr.cc/virtual/2026/poster/10008995",
+    "selected_date": "2026-10-13"
   }
 ]

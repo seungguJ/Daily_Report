@@ -434,5 +434,13 @@
     "link": "https://github.com/Graphify-Labs/graphify",
     "github_repo": "https://github.com/Graphify-Labs/graphify",
     "selected_date": "2026-10-12"
+  },
+  {
+    "name": "text-to-cad",
+    "canonical_project": "earthtojake/text-to-cad",
+    "announcement_date": "2026-10-11",
+    "link": "https://github.com/earthtojake/text-to-cad",
+    "github_repo": "https://github.com/earthtojake/text-to-cad",
+    "selected_date": "2026-10-13"
   }
 ]
