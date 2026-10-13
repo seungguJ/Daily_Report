@@ -1,26 +1,26 @@
-[AI Morning Brief - 2026-10-13]
+[AI Morning Brief - 2026-10-14]
 
 1. On-device AI 논문
 
-* 제목: Neodragon: Mobile Video Generation Using Diffusion Transformer
-* 학회/게재시점: ICLR 2026 (Poster) / 2026-01-26
-* 다루는 문제: 비디오 DiT는 메모리·연산 부담이 커서 폰·노트북의 저전력 NPU에서 돌리기 어렵다는 문제.
-* 핵심 Contribution: 텍스트 인코더 축소, 디코더 증류, 블록 프루닝, DMD 확장 증류를 묶어 NPU용 비디오 생성 파이프라인을 만들었다. Qualcomm Hexagon NPU에서 640×1024, 49프레임을 6.7초에 생성하고 VBench 81.61점을 기록했다.
+* 제목: STAR-KV: Low-Rank KV Cache Compression via Soft Thresholding for Adaptive Rank Control
+* 학회/게재시점: ICML 2026 (Spotlight), PMLR Vol. 306 / 2026-07 (ICML 2026 개최 기간 7/6~7/11)
+* 다루는 문제: 긴 컨텍스트 추론에서 KV 캐시가 메모리를 대부분 차지함. 기존 low-rank 압축은 rank를 고정하거나 휴리스틱으로 정해 정확도 손실이 큼.
+* 핵심 Contribution: 미분 가능한 soft thresholding으로 attention head·블록별 rank를 자동 결정하고, Key/Value 민감도에 맞춘 하이브리드 분해와 low-rank 인지형 혼합 정밀도 양자화를 결합.
 * 인사이트:
-  1. 큰 텍스트 인코더를 작은 모델로 바꾸되 이미지·비디오 데이터 없이 증류해 품질 손실을 최소화했다.
-  2. 블록 중요도 기반 프루닝 후 2단계 증류로 성능을 복구했다.
-  3. 샘플링 단계를 줄이는 증류까지 합쳐 모바일 비디오 생성 SOTA를 주장한다.
-* 왜 볼만한가: 생성형 비디오가 클라우드 없이 기기 안에서 가능하다는 걸 NPU 실측으로 보여준다. 프라이버시·비용 측면에서 온디바이스 멀티모달의 현실적 레퍼런스다.
-* 링크: https://iclr.cc/virtual/2026/poster/10008995
+  1. low-rank만으로 KV 캐시 최대 75% 절감, 양자화 결합 시 최대 20배 절감 (논문 보고 수치).
+  2. rank를 레이어/헤드마다 학습으로 정해서 "일괄 압축"보다 정확도 손실을 줄임.
+  3. 커스텀 Triton 커널로 attention 최대 6.9배, 생성 처리량 최대 3.1배 향상. 단, 측정은 GPU 환경이라 모바일 실측은 별도 확인 필요.
+* 왜 볼만한가: 온디바이스는 메모리 상한이 가장 큰 제약이라 KV 캐시 절감이 곧 긴 문맥 로컬 추론의 가능 여부를 좌우함. 코드도 공개돼 있어 바로 실험해 볼 수 있음.
+* 링크: https://proceedings.mlr.press/v306/bhatnagar26a.html
 
 2. AI Agent 활용 아이템
 
-* 이름: text-to-cad
-* 공개/출시시점: v0.7.21 릴리스 2026-10-11 (활발히 주 단위 이상 릴리스 중)
-* 핵심 기능: 코딩 에이전트(Claude Code, Codex 등)에 CAD 능력을 붙여 주는 SKILL.md 기반 스킬 모음이다. 텍스트·이미지 요청을 STEP로 만들고 STL/3MF/GLB 내보내기, 제조 전 검사, 도면 생성을 지원한다. MIT 라이선스.
+* 이름: code-review-graph (v2.3.9)
+* 공개/출시시점: v2.3.9 릴리스 2026-09-18 (저장소는 2026-02경 생성, 2차 자료 기준)
+* 핵심 기능: Tree-sitter로 코드베이스를 구조 그래프로 만들어 로컬에 저장하고, MCP로 AI 코딩 도구에 변경 영향 범위(blast radius)만 읽게 해 주는 local-first 코드 지식 그래프. 증분 업데이트 지원.
 * 활용 아이디어:
-  1. 3D 프린팅용 부품(브래킷, 케이스)을 프롬프트로 만들고 STL로 바로 뽑기.
-  2. 제작 서비스에 넘기기 전 설계 검사를 에이전트에 맡기기.
-  3. 프로토타입 도면(DXF)과 3D 뷰어 확인까지 한 번에 돌리기.
-* 왜 볼만한가: GitHub 스타 약 1.96만, 포크 약 1.9k로 이번 주 트렌딩이고 열린 이슈는 2건이다. 최근 며칠간 릴리스가 매일 나올 만큼 유지보수가 빠르다. 다만 데모는 정성 평가 위주이고 생성 STEP가 검사를 사람 손 없이 통과하는 비율은 공개되지 않았으며, 기본 텔레메트리가 켜져 있다(끄기 가능). 같은 시기 후보인 OpenRig(약 7.2k 스타)나 Cursor 플러그인 모음보다 채택 규모와 활동성이 앞서 선정했다.
-* 링크: https://github.com/earthtojake/text-to-cad
+  1. PR 리뷰 시 변경된 파일과 연관 코드만 컨텍스트로 넘겨 토큰과 리뷰 시간을 줄이기.
+  2. 큰 모노레포에서 리팩터링 전에 호출 관계와 영향 범위를 먼저 확인하기.
+  3. 여러 저장소를 등록해 cross-repo 검색으로 서비스 간 의존성 추적하기.
+* 왜 볼만한가: GitHub 스타 약 3.2만, 포크 약 2.9k로 이번 후보 중 채택 신호가 가장 큼. 설치는 `pip install code-review-graph` 후 `code-review-graph install` 두 단계로 끝나고, 여러 AI 코딩 도구를 자동 감지해 설정함. 최근 릴리스도 활발함. 다만 열린 이슈 102건·PR 82건으로 백로그가 있고, 토큰 절감 수치(6.8배~93배)는 자체 보고라 편차가 커서 우리 코드베이스에서 직접 검증 필요. 같은 기간 후보였던 Grok Build(공식, 스타 약 2.7만, 2026-05 공개)보다 스타·범용성(툴 무관 MCP)에서 앞서 선정.
+* 링크: https://github.com/tirth8205/code-review-graph

@@ -442,5 +442,13 @@
     "link": "https://github.com/earthtojake/text-to-cad",
     "github_repo": "https://github.com/earthtojake/text-to-cad",
     "selected_date": "2026-10-13"
+  },
+  {
+    "name": "code-review-graph",
+    "canonical_project": "tirth8205/code-review-graph",
+    "announcement_date": "2026-09-18",
+    "link": "https://github.com/tirth8205/code-review-graph",
+    "github_repo": "https://github.com/tirth8205/code-review-graph",
+    "selected_date": "2026-10-14"
   }
 ]
