@@ -452,5 +452,13 @@
     "publication_date": "2026-07-06",
     "link": "https://proceedings.mlr.press/v306/bhatnagar26a.html",
     "selected_date": "2026-10-14"
+  },
+  {
+    "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+    "normalized_title": "select to think unlocking slm potential with local sufficiency",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-07",
+    "link": "https://icml.cc/virtual/2026/poster/65879",
+    "selected_date": "2026-10-15"
   }
 ]

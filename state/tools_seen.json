@@ -450,5 +450,13 @@
     "link": "https://github.com/tirth8205/code-review-graph",
     "github_repo": "https://github.com/tirth8205/code-review-graph",
     "selected_date": "2026-10-14"
+  },
+  {
+    "name": "REA",
+    "canonical_project": "morluto/rea",
+    "announcement_date": "2026-07-12",
+    "link": "https://github.com/morluto/rea",
+    "github_repo": "https://github.com/morluto/rea",
+    "selected_date": "2026-10-15"
   }
 ]

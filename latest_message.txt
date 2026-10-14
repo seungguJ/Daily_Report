@@ -1,26 +1,26 @@
-[AI Morning Brief - 2026-10-14]
+[AI Morning Brief - 2026-10-15]
 
 1. On-device AI 논문
 
-* 제목: STAR-KV: Low-Rank KV Cache Compression via Soft Thresholding for Adaptive Rank Control
-* 학회/게재시점: ICML 2026 (Spotlight), PMLR Vol. 306 / 2026-07 (ICML 2026 개최 기간 7/6~7/11)
-* 다루는 문제: 긴 컨텍스트 추론에서 KV 캐시가 메모리를 대부분 차지함. 기존 low-rank 압축은 rank를 고정하거나 휴리스틱으로 정해 정확도 손실이 큼.
-* 핵심 Contribution: 미분 가능한 soft thresholding으로 attention head·블록별 rank를 자동 결정하고, Key/Value 민감도에 맞춘 하이브리드 분해와 low-rank 인지형 혼합 정밀도 양자화를 결합.
+* 제목: Select to Think: Unlocking SLM Potential with Local Sufficiency
+* 학회/게재시점: ICML 2026 (포스터, 2026-07-07)
+* 다루는 문제: 작은 언어모델(SLM)은 배포는 쉽지만 추론력이 약합니다. 기존에는 LLM을 중간중간 호출하거나 증류하는데, 호출은 지연·비용이 늘고 증류는 SLM 용량 한계로 잘 안 됩니다.
+* 핵심 Contribution: LLM이 선호하는 다음 토큰이 SLM의 top-K 후보 안에 있다는 "local sufficiency"를 관찰했습니다. LLM은 직접 생성하지 않고 SLM 후보를 고르는 selector로만 쓰고(S2T), 이 선택 능력을 SLM에 증류(S2T-Local)해 추론 시 LLM 없이 동작합니다.
 * 인사이트:
-  1. low-rank만으로 KV 캐시 최대 75% 절감, 양자화 결합 시 최대 20배 절감 (논문 보고 수치).
-  2. rank를 레이어/헤드마다 학습으로 정해서 "일괄 압축"보다 정확도 손실을 줄임.
-  3. 커스텀 Triton 커널로 attention 최대 6.9배, 생성 처리량 최대 3.1배 향상. 단, 측정은 GPU 환경이라 모바일 실측은 별도 확인 필요.
-* 왜 볼만한가: 온디바이스는 메모리 상한이 가장 큰 제약이라 KV 캐시 절감이 곧 긴 문맥 로컬 추론의 가능 여부를 좌우함. 코드도 공개돼 있어 바로 실험해 볼 수 있음.
-* 링크: https://proceedings.mlr.press/v306/bhatnagar26a.html
+  1. 1.5B SLM의 top-8 후보에 32B LLM의 선택이 95% 포함됩니다. 생성이 아니라 "선택"이면 학습 신호가 훨씬 단순해집니다.
+  2. S2T-Local은 수학 벤치마크에서 greedy 대비 평균 24.1% 상대 향상을 보였고, 경로 8개짜리 self-consistency와 비슷한 성능을 단일 경로로 냅니다.
+  3. 추론 시 클라우드 LLM 호출이 없어 프라이버시와 오프라인 환경에 유리합니다.
+* 왜 볼만한가: 기기 안에서 작은 모델의 추론 품질을 추가 연산 없이 끌어올리는 방법이라 온디바이스 배포에 바로 의미가 있습니다.
+* 링크: https://icml.cc/virtual/2026/poster/65879
 
 2. AI Agent 활용 아이템
 
-* 이름: code-review-graph (v2.3.9)
-* 공개/출시시점: v2.3.9 릴리스 2026-09-18 (저장소는 2026-02경 생성, 2차 자료 기준)
-* 핵심 기능: Tree-sitter로 코드베이스를 구조 그래프로 만들어 로컬에 저장하고, MCP로 AI 코딩 도구에 변경 영향 범위(blast radius)만 읽게 해 주는 local-first 코드 지식 그래프. 증분 업데이트 지원.
+* 이름: REA (morluto/rea)
+* 공개/출시시점: 2026-07-12 (npm 패키지 rea-agents 최초 게시일 기준, 최신 v6.5.0, 저장소 최근 커밋 2026-10-14)
+* 핵심 기능: AI 에이전트가 리버스 엔지니어링을 하도록 돕는 MCP 서버 + CLI입니다. 네이티브 바이너리(Hopper/Ghidra/IDA), Electron/JS, .NET, Android APK, 펌웨어, 웹/패킷 캡처를 분석하고, 결과에 근거와 한계를 함께 남깁니다. 분석은 로컬에서 실행됩니다.
 * 활용 아이디어:
-  1. PR 리뷰 시 변경된 파일과 연관 코드만 컨텍스트로 넘겨 토큰과 리뷰 시간을 줄이기.
-  2. 큰 모노레포에서 리팩터링 전에 호출 관계와 영향 범위를 먼저 확인하기.
-  3. 여러 저장소를 등록해 cross-repo 검색으로 서비스 간 의존성 추적하기.
-* 왜 볼만한가: GitHub 스타 약 3.2만, 포크 약 2.9k로 이번 후보 중 채택 신호가 가장 큼. 설치는 `pip install code-review-graph` 후 `code-review-graph install` 두 단계로 끝나고, 여러 AI 코딩 도구를 자동 감지해 설정함. 최근 릴리스도 활발함. 다만 열린 이슈 102건·PR 82건으로 백로그가 있고, 토큰 절감 수치(6.8배~93배)는 자체 보고라 편차가 커서 우리 코드베이스에서 직접 검증 필요. 같은 기간 후보였던 Grok Build(공식, 스타 약 2.7만, 2026-05 공개)보다 스타·범용성(툴 무관 MCP)에서 앞서 선정.
-* 링크: https://github.com/tirth8205/code-review-graph
+  1. 출처 불명의 앱이나 바이너리가 어떤 네트워크 호출을 하는지 에이전트에게 정리시킵니다.
+  2. Electron 앱의 IPC와 라우트를 맵으로 뽑아 보안 점검이나 연동 분석에 씁니다.
+  3. 문서 없는 레거시 라이브러리의 동작을 APK나 .NET 어셈블리에서 파악합니다.
+* 왜 볼만한가: GitHub 스타 약 23.9만, 포크 약 5.9만으로 이번 주 트렌딩 1위권이고, 오늘도 커밋이 이어지는 활발한 프로젝트입니다. `npx rea-agents setup` 한 줄로 Claude Code, Codex, Cursor 등에 붙습니다. 코드 생성 위주인 다른 에이전트 도구와 달리 "코드 이해"를 겨냥해 차별점이 큽니다. 단, 외부 도구(Ghidra 등)를 직접 설치해야 하고, 런타임 캡처는 사용자 권한으로 대상을 실행하므로 샌드박스에서 쓰는 게 좋습니다. 열린 이슈 468건, PR 328건이라 관리 부담은 있습니다. 커뮤니티 반응은 GitHub 트렌딩 외에 HN/Reddit 논의를 찾지 못했고, 스타 수치는 저장소 페이지 기준입니다.
+* 링크: https://github.com/morluto/rea
