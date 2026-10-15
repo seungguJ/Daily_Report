@@ -460,5 +460,13 @@
     "publication_date": "2026-07-07",
     "link": "https://icml.cc/virtual/2026/poster/65879",
     "selected_date": "2026-10-15"
+  },
+  {
+    "title": "EpiCache: Episodic KV Cache Management for Long-Term Conversation on Resource-Constrained Environments",
+    "normalized_title": "epicache episodic kv cache management for longterm conversation on resourceconstrained environments",
+    "venue": "ICML 2026",
+    "publication_date": "2026-07-09",
+    "link": "https://icml.cc/virtual/2026/poster/65405",
+    "selected_date": "2026-10-16"
   }
 ]

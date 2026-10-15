@@ -458,5 +458,13 @@
     "link": "https://github.com/morluto/rea",
     "github_repo": "https://github.com/morluto/rea",
     "selected_date": "2026-10-15"
+  },
+  {
+    "name": "Agent-Native",
+    "canonical_project": "BuilderIO/agent-native",
+    "announcement_date": "2026-03-12",
+    "link": "https://github.com/BuilderIO/agent-native",
+    "github_repo": "https://github.com/BuilderIO/agent-native",
+    "selected_date": "2026-10-16"
   }
 ]
