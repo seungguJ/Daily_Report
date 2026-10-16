@@ -468,5 +468,13 @@
     "publication_date": "2026-07-09",
     "link": "https://icml.cc/virtual/2026/poster/65405",
     "selected_date": "2026-10-16"
+  },
+  {
+    "title": "MobileMoE: Scaling On-Device Mixture of Experts",
+    "normalized_title": "mobilemoe scaling on-device mixture of experts",
+    "venue": "NeurIPS 2026",
+    "publication_date": "2026-05-26",
+    "link": "https://neurips.cc/virtual/2026/poster/150777",
+    "selected_date": "2026-10-17"
   }
 ]

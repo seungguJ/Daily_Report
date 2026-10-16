@@ -466,5 +466,13 @@
     "link": "https://github.com/BuilderIO/agent-native",
     "github_repo": "https://github.com/BuilderIO/agent-native",
     "selected_date": "2026-10-16"
+  },
+  {
+    "name": "Moli",
+    "canonical_project": "Moli (lexmount/moli)",
+    "announcement_date": "2026-08-10",
+    "link": "https://github.com/lexmount/moli",
+    "github_repo": "https://github.com/lexmount/moli",
+    "selected_date": "2026-10-17"
   }
 ]
